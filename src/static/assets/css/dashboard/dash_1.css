@@ -261,11 +261,11 @@
     box-shadow: 0 2px 2px rgba(224, 230, 237, 0.4588235294117647), 1px 6px 7px rgba(224, 230, 237, 0.4588235294117647);
 }
 .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-secondary {
-    background-color: #4361ee;
+    background-color: #597ba9;
     background-image: linear-gradient(to right, #BA68C8 0%, #7579ff 100%);
 }
 .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-success {
-    background-color: #4361ee;
+    background-color: #597ba9;
     background-image: linear-gradient(to right, #009688 0%, #25d5e4 100%);
 }
 .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-warning {
@@ -558,7 +558,7 @@
     border-radius: 0;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-primary .t-dot:before {
-    background: #4361ee;
+    background: #597ba9;
     /* border: 2px solid rgb(27 85 226 / 33%); */
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-success .t-dot:before {
@@ -624,8 +624,8 @@
     top: 6px;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-primary .t-text span.badge {
-    color: #4361ee;
-    border: 1px solid #4361ee;
+    color: #597ba9;
+    border: 1px solid #597ba9;
     background-color: #eaf1ff;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-secondary .t-text span.badge {
@@ -723,7 +723,7 @@
     font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    color: #4361ee;
+    color: #597ba9;
 }
 .widget-account-invoice-one .invoice-box .acc-amount {
     text-align: center;
@@ -792,7 +792,7 @@
     padding: 24px 30px 63px 30px;
     border-radius: 15px;
     background-color: rgb(22, 15, 107);
-    background-image: linear-gradient(315deg, #160f6b 0%, #4361ee 74%);
+    background-image: linear-gradient(315deg, #160f6b 0%, #597ba9 74%);
     min-height: 213px;
     height: 100%;
     
@@ -1263,8 +1263,8 @@
     border-radius: 6px;
 }
 .widget-table-three .table .td-content .tag-primary {
-    color: #4361ee;
-    border: 1px dashed #4361ee;
+    color: #597ba9;
+    border: 1px dashed #597ba9;
     background: #eaf1ff;
 }
 .widget-table-three .table .td-content .tag-success {

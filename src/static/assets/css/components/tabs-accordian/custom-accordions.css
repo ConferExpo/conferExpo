@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     .card-header section > div.collapsed {
       color: #888ea8; }
     .card-header section > div:not(.collapsed) {
-      color: #4361ee;
+      color: #597ba9;
       border-bottom: 1px solid #d3d3d3;
       font-weight: 600; }
     .card-header section > div .icons {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 13px;
       font-weight: 600; }
       .card .card-body ul li a:hover {
-        color: #4361ee; }
+        color: #597ba9; }
 
 /*
     No Outer Spacing
@@ -104,5 +104,5 @@ h1, h2, h3, h4, h5, h6 {
     fill: rgba(0, 23, 55, 0.08); }
 
 .accordion-icons div:not(.collapsed) .accordion-icon svg {
-  color: #4361ee;
+  color: #597ba9;
   fill: rgba(27, 85, 226, 0.239216); }

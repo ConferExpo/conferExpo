@@ -116,7 +116,7 @@
   box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2); }
 
 .chat-system .user-list-box .people .person:hover .user-info .f-body .meta-info .user-name, .chat-system .user-list-box .people .person:hover .user-info .f-body .meta-info .user-meta-time {
-  color: #4361ee; }
+  color: #597ba9; }
 
 .chat-system .user-list-box .people .person.active:after, .chat-system .user-list-box .people .person:hover:after {
   display: none; }
@@ -361,7 +361,7 @@
         fill: rgba(0, 23, 55, 0.08);
         stroke-width: 1.6; }
         .chat-system .chat-box .chat-box-inner .chat-meta-user.chat-active .chat-action-btn svg:hover {
-          color: #4361ee;
+          color: #597ba9;
           fill: rgba(27, 85, 226, 0.239216); }
         .chat-system .chat-box .chat-box-inner .chat-meta-user.chat-active .chat-action-btn svg:not(:last-child) {
           margin-right: 9px; }
@@ -390,7 +390,7 @@
           .chat-system .chat-box .chat-box-inner .chat-meta-user.chat-active .chat-action-btn .dropdown-menu a.dropdown-item.active, .chat-system .chat-box .chat-box-inner .chat-meta-user.chat-active .chat-action-btn .dropdown-menu a.dropdown-item:active {
             background-color: transparent; }
           .chat-system .chat-box .chat-box-inner .chat-meta-user.chat-active .chat-action-btn .dropdown-menu a:hover svg {
-            color: #4361ee;
+            color: #597ba9;
             fill: rgba(27, 85, 226, 0.239216); }
     .chat-system .chat-box .chat-box-inner .chat-conversation-box {
       position: relative;
@@ -519,7 +519,7 @@
       transform: rotate(29deg) skew(-35deg); }
     .chat-system .chat-box .bubble.you {
       float: left;
-      color: #4361ee;
+      color: #597ba9;
       background-color: #f6f6f6;
       -webkit-align-self: flex-start;
       align-self: flex-start;
@@ -534,7 +534,7 @@
     .chat-system .chat-box .bubble.me {
       float: right;
       color: #fff;
-      background-color: #4361ee;
+      background-color: #597ba9;
       -webkit-align-self: flex-end;
       align-self: flex-end;
       -moz-animation-name: slideFromRight;
@@ -544,7 +544,7 @@
       box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12); }
       .chat-system .chat-box .bubble.me:before {
         right: -3px;
-        background-color: #4361ee; }
+        background-color: #597ba9; }
   .chat-system .chat-box .conversation-start {
     position: relative;
     width: 100%;

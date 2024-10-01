@@ -144,7 +144,7 @@
 }
 .tab-title .nav-pills .nav-link.active, .tab-title .nav-pills .show>.nav-link {
     background-color: transparent;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 600;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
@@ -180,7 +180,7 @@
 }
 .tab-title .nav-pills .nav-link.active svg,
 .tab-title .nav-pills .show>.nav-link svg {
-    color: #4361ee;
+    color: #597ba9;
 }
 .tab-title .nav-pills a.nav-link svg {
     width: 19px;
@@ -190,7 +190,7 @@
     color: #888ea8;
 }
 .tab-title .nav-pills a.nav-link:hover svg {
-    color: #4361ee;
+    color: #597ba9;
     fill: transparent;
 }
 .tab-title .nav-pills a.nav-link span.nav-names {
@@ -199,10 +199,10 @@
     padding: 0;
 }
 .tab-title .nav-pills a.nav-link:hover span.nav-names {
-    color: #4361ee;
+    color: #597ba9;
 }
 .tab-title .nav-pills a.nav-link .mail-badge {
-    background: #4361ee;
+    background: #597ba9;
     border-radius: 50%;
     position: absolute;
     right: 8px;
@@ -244,10 +244,10 @@
     border-bottom: none!important;
 }
 .tab-title .nav-pills.group-list .nav-item a.active {
-    color: #4361ee;
+    color: #597ba9;
 }
 .tab-title .nav-pills.group-list .nav-item a:hover {
-    color: #4361ee;
+    color: #597ba9;
 }
 .tab-title .nav-pills.group-list .nav-item a.g-dot-primary.active:before {
     background: #2196f3 ;
@@ -283,7 +283,7 @@
 }
 .tab-title li.mail-labels a.dropdown-item:hover {
     background-color: #fff;
-    color: #4361ee;
+    color: #597ba9;
 }
 .tab-title li.mail-labels .label:after {
     position: absolute;
@@ -619,7 +619,7 @@
 .content-box .mail-title {
     font-size: 24px;
     font-weight: 600;
-    color: #4361ee;
+    color: #597ba9;
     margin-bottom: 0;
     align-self: center;
 }
@@ -810,7 +810,7 @@
 .compose-box .compose-content form .mail-form select {
     padding: 5px;
     font-weight: 700;
-    color: #4361ee;
+    color: #597ba9;
     margin-left: 10px;
     border-radius: 6px;
     border: 1px solid #d3d3d3;
@@ -819,21 +819,21 @@
     align-self: center;
     font-size: 19px;
     margin-right: 14px;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 600;
 }
 .compose-box .compose-content form .mail-cc svg {
     align-self: center;
     font-size: 19px;
     margin-right: 14px;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 600;
 }
 .compose-box .compose-content form .mail-subject svg {
     align-self: center;
     font-size: 19px;
     margin-right: 14px;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 600;
 }
 .compose-box .compose-content form #editor-container h1 { color: #3b3f5c; }
@@ -844,7 +844,7 @@
 }
 #composeMailModal .modal-footer .btn[data-dismiss="modal"] {
     background-color: #fff;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 700;
     border: 1px solid #e8e8e8;
     padding: 10px 25px;
@@ -857,10 +857,10 @@
 #composeMailModal .modal-footer #btn-reply,
 #composeMailModal .modal-footer #btn-fwd,
 #composeMailModal .modal-footer #btn-send {
-    background-color: #4361ee;
+    background-color: #597ba9;
     color: #fff;
     font-weight: 600;
-    border: 1px solid #4361ee;
+    border: 1px solid #597ba9;
     padding: 10px 25px;
 }
 #composeMailModal .modal-footer #btn-reply.disabled,

@@ -25,7 +25,7 @@
     letter-spacing: 0px;
     text-align: center; }
     .faq .faq-layouting .fq-tab-section h2 span {
-      color: #4361ee; }
+      color: #597ba9; }
   .faq .faq-layouting .fq-tab-section .accordion .card {
     border: 1px solid #e0e6ed;
     border-radius: 6px;
@@ -38,7 +38,7 @@
         padding: 15px 19px;
         font-weight: 600;
         font-size: 16px;
-        color: #4361ee;
+        color: #597ba9;
         cursor: pointer;
         display: flex;
         justify-content: space-between; }
@@ -78,7 +78,7 @@
       color: #888ea8;
       fill: rgba(0, 23, 55, 0.08); }
     .faq .faq-layouting .fq-tab-section .accordion .card:hover .card-header div span.faq-like-count, .faq .faq-layouting .fq-tab-section .accordion .card .card-header div[aria-expanded="true"] span.faq-like-count {
-      color: #4361ee;
+      color: #597ba9;
       fill: rgba(27, 85, 226, 0.239216); }
     .faq .faq-layouting .fq-tab-section .accordion .card .card-body {
       padding: 19px 30px; }

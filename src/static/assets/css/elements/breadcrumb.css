@@ -57,7 +57,7 @@
   color: #fff; }
 
 .breadcrumb-two .breadcrumb li a {
-  color: #4361ee;
+  color: #597ba9;
   text-decoration: none;
   padding: 6px 0 6px 40px;
   background: #ebedf2;
@@ -103,10 +103,10 @@
   border-bottom-left-radius: 6px; }
 
 .breadcrumb-two .breadcrumb li.active a {
-  background: #4361ee;
+  background: #597ba9;
   color: #fff; }
   .breadcrumb-two .breadcrumb li.active a:after {
-    border-left-color: #4361ee; }
+    border-left-color: #597ba9; }
 
 .breadcrumb-two .breadcrumb li:last-child a {
   pointer-events: none;
@@ -133,7 +133,7 @@
     border-bottom-right-radius: 13px;
     border-top-right-radius: 13px; }
     .breadcrumb-three .breadcrumb-item.active {
-      color: #4361ee;
+      color: #597ba9;
       font-weight: 600; }
     .breadcrumb-three .breadcrumb-item + .breadcrumb-item::before {
       color: #515365;
@@ -170,7 +170,7 @@
       border-radius: 50%;
       height: 4px;
       width: 4px;
-      background: #4361ee;
+      background: #597ba9;
       left: -13px;
       top: 50%; }
     .breadcrumb-four .breadcrumb li a {
@@ -186,10 +186,10 @@
       vertical-align: text-bottom;
       width: 20px; }
     .breadcrumb-four .breadcrumb li.active a {
-      color: #4361ee !important;
+      color: #597ba9 !important;
       font-weight: 600; }
     .breadcrumb-four .breadcrumb li.active svg {
-      color: #4361ee; }
+      color: #597ba9; }
     .breadcrumb-four .breadcrumb li span {
       vertical-align: text-bottom; }
 
@@ -213,7 +213,7 @@
       border-radius: 50%;
       height: 4px;
       width: 4px;
-      background: #4361ee;
+      background: #597ba9;
       left: -13px;
       top: 50%; }
     .breadcrumb-five .breadcrumb li a {
@@ -227,7 +227,7 @@
       vertical-align: bottom;
       width: 20px; }
     .breadcrumb-five .breadcrumb li.active a {
-      color: #4361ee !important;
+      color: #597ba9 !important;
       font-weight: 600; }
 
 @media (max-width: 575px) {

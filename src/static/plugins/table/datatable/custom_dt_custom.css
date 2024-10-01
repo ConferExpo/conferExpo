@@ -18,7 +18,7 @@
   border-left: none !important; }
 
 .table-hover:not(.table-dark) tbody tr:hover .new-control.new-checkbox .new-control-indicator {
-  border: 1px solid #4361ee; }
+  border: 1px solid #597ba9; }
 
 /*Style. 1*/
 .style-1 .user-name {
@@ -95,4 +95,4 @@
   /* fill: rgba(231, 81, 90, 0.2196078431372549); */ }
 
 .style-3.table-hover:not(.table-dark) tbody tr:hover td:first-child {
-  color: #4361ee !important; }
+  color: #597ba9 !important; }

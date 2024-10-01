@@ -91,7 +91,7 @@ body {
     .form-form .form-form-wrap p.signup-link.recovery {
       margin-top: 0; }
     .form-form .form-form-wrap p.signup-link a {
-      color: #4361ee;
+      color: #597ba9;
       border-bottom: 1px solid; }
   .form-form .form-form-wrap form .field-wrapper {
     width: 100%; }
@@ -121,7 +121,7 @@ body {
         padding-left: 31px;
         font-weight: 100; }
       .form-form .form-form-wrap form .field-wrapper.terms_condition a {
-        color: #4361ee; }
+        color: #597ba9; }
     .form-form .form-form-wrap form .field-wrapper svg.feather-user {
       top: 53px; }
     .form-form .form-form-wrap form .field-wrapper svg.feather-lock {
@@ -200,7 +200,7 @@ body {
     .form-form .form-form-wrap form .social a.social-fb {
       margin-right: 15px; }
       .form-form .form-form-wrap form .social a.social-fb svg, .form-form .form-form-wrap form .social a.social-fb .brand-name {
-        color: #4361ee; }
+        color: #597ba9; }
 
 @media (max-width: 991px) {
   .form-form {

@@ -102,7 +102,7 @@
 .widget-card-four .progress-bar.bg-gradient-secondary {
   position: relative;
   background-color: #fc5296;
-  background-image: linear-gradient(315deg, #805dca 0%, #4361ee 74%); }
+  background-image: linear-gradient(315deg, #805dca 0%, #597ba9 74%); }
 
 .widget-card-four .progress-bar:before {
   content: '';
@@ -158,7 +158,7 @@
         font-size: 13px;
         font-weight: 700;
         margin-bottom: 0;
-        /* color: #4361ee; */ }
+        /* color: #597ba9; */ }
       .widget.widget-one .w-chart .w-chart-section .w-stats {
         color: #f8538d;
         font-size: 18px;
@@ -306,7 +306,7 @@
       justify-content: center;
       width: 32px; }
       .widget-activity-five .timeline-line .item-timeline .t-dot div.t-primary {
-        background-color: #4361ee;
+        background-color: #597ba9;
         box-shadow: 0 10px 20px -8px #1b55e2; }
         .widget-activity-five .timeline-line .item-timeline .t-dot div.t-primary svg {
           color: #fff; }
@@ -420,7 +420,7 @@
   border-bottom-right-radius: 6px; }
 
 .widget-one_hybrid.widget-followers .widget-heading .w-icon {
-  color: #4361ee;
+  color: #597ba9;
   background: #eaf1ff; }
 
 .widget-one_hybrid.widget-referral .widget-heading .w-icon {
@@ -429,7 +429,7 @@
 
 .widget-one_hybrid.widget-social {
   background: #e7f7ff;
-  background: #4361ee; }
+  background: #597ba9; }
   .widget-one_hybrid.widget-social .widget-heading .w-icon {
     color: #2196f3;
     border: 1px solid #2196f3; }
@@ -447,7 +447,7 @@
   padding: 22px 19px;
   border: none;
   box-shadow: 0 0.1px 0px rgba(0, 0, 0, 0.002), 0 0.2px 0px rgba(0, 0, 0, 0.003), 0 0.4px 0px rgba(0, 0, 0, 0.004), 0 0.6px 0px rgba(0, 0, 0, 0.004), 0 0.9px 0px rgba(0, 0, 0, 0.005), 0 1.2px 0px rgba(0, 0, 0, 0.006), 0 1.8px 0px rgba(0, 0, 0, 0.006), 0 2.6px 0px rgba(0, 0, 0, 0.007), 0 3.9px 0px rgba(0, 0, 0, 0.008), 0 7px 0px rgba(0, 0, 0, 0.01);
-  background: #4361ee;
+  background: #597ba9;
   z-index: 0;
   overflow: hidden;
   background-image: linear-gradient(to top, #00c6fb -227%, #005bea 100%) !important; }
@@ -485,7 +485,7 @@
     .widget-account-invoice-two .account-box .inv-stats {
       display: inline-block;
       padding: 3px 5px;
-      background: #4361ee;
+      background: #597ba9;
       color: #d3d3d3;
       font-size: 12px;
       font-weight: 600;
@@ -638,7 +638,7 @@
     .widget-four .widget-content .browser-list:nth-child(3) .w-icon {
       background: #fff9ed; }
     .widget-four .widget-content .browser-list:nth-child(1) .w-icon svg {
-      color: #4361ee; }
+      color: #597ba9; }
     .widget-four .widget-content .browser-list:nth-child(2) .w-icon svg {
       color: #e7515a; }
     .widget-four .widget-content .browser-list:nth-child(3) .w-icon svg {
@@ -741,7 +741,7 @@
   .widget-card-two .card-bottom-section a {
     display: block;
     margin-top: 18px;
-    background: #4361ee;
+    background: #597ba9;
     color: #fff;
     padding: 10px 10px;
     transform: none;
@@ -753,7 +753,7 @@
     border: none;
     background-image: linear-gradient(315deg, #1e9afe 0%, #3d38e1 74%); }
     .widget-card-two .card-bottom-section a.btn:hover, .widget-card-two .card-bottom-section a.btn:focus {
-      border-color: #4361ee; }
+      border-color: #597ba9; }
 
 /*
     =====================
@@ -830,7 +830,7 @@
         color: #515365; }
     .widget-five .widget-content .progress-data .progress-stats p {
       font-weight: 600;
-      color: #4361ee;
+      color: #597ba9;
       font-size: 15px; }
     .widget-five .widget-content .progress-data .progress {
       border-radius: 30px;
@@ -1128,10 +1128,10 @@
       border-radius: 20px;
       box-shadow: 0 2px 2px rgba(224, 230, 237, 0.458824), 1px 6px 7px rgba(224, 230, 237, 0.458824); }
       .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-secondary {
-        background-color: #4361ee;
+        background-color: #597ba9;
         background-image: linear-gradient(to right, #BA68C8 0%, #7579ff 100%); }
       .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-success {
-        background-color: #4361ee;
+        background-color: #597ba9;
         background-image: linear-gradient(to right, #009688 0%, #25d5e4 100%); }
       .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-warning {
         background-color: #fc9842;
@@ -1377,7 +1377,7 @@
         border-bottom-width: 0;
         border-radius: 0; }
     .widget-activity-four .timeline-line .item-timeline.timeline-primary .t-dot:before {
-      background: #4361ee;
+      background: #597ba9;
       /* border: 2px solid rgb(27 85 226 / 33%); */ }
     .widget-activity-four .timeline-line .item-timeline.timeline-success .t-dot:before {
       background-color: #1abc9c;
@@ -1433,8 +1433,8 @@
         transform: none;
         top: 6px; }
     .widget-activity-four .timeline-line .item-timeline.timeline-primary .t-text span.badge {
-      color: #4361ee;
-      border: 1px solid #4361ee;
+      color: #597ba9;
+      border: 1px solid #597ba9;
       background-color: #eaf1ff; }
     .widget-activity-four .timeline-line .item-timeline.timeline-secondary .t-text span.badge {
       color: #805dca;
@@ -1516,7 +1516,7 @@
   font-size: 20px;
   letter-spacing: 1px;
   margin-bottom: 10px;
-  color: #4361ee; }
+  color: #597ba9; }
 
 .widget-account-invoice-one .invoice-box .acc-amount {
   text-align: center;
@@ -1578,7 +1578,7 @@
     padding: 24px 30px 63px 30px;
     border-radius: 15px;
     background-color: #160f6b;
-    background-image: linear-gradient(315deg, #160f6b 0%, #4361ee 74%);
+    background-image: linear-gradient(315deg, #160f6b 0%, #597ba9 74%);
     min-height: 213px;
     height: 100%; }
     .widget-account-invoice-three .widget-heading .wallet-usr-info {
@@ -1943,8 +1943,8 @@
       padding: 2px 5px;
       border-radius: 6px; }
     .widget-table-three .table .td-content .tag-primary {
-      color: #4361ee;
-      border: 1px dashed #4361ee;
+      color: #597ba9;
+      border: 1px dashed #597ba9;
       background: #eaf1ff; }
     .widget-table-three .table .td-content .tag-success {
       color: #009688;
@@ -2053,7 +2053,7 @@
       .widget-activity-three .timeline-line .item-timeline .t-dot div.t-primary {
         background-color: rgba(194, 213, 255, 0.5); }
         .widget-activity-three .timeline-line .item-timeline .t-dot div.t-primary svg {
-          color: #4361ee; }
+          color: #597ba9; }
       .widget-activity-three .timeline-line .item-timeline .t-dot div.t-secondary {
         background-color: rgba(220, 207, 247, 0.55); }
         .widget-activity-three .timeline-line .item-timeline .t-dot div.t-secondary svg {

@@ -11,14 +11,14 @@
 .loader {
   border: 7px solid #f1f2f3;
   border-radius: 50%;
-  border-top: 7px solid #4361ee;
+  border-top: 7px solid #597ba9;
   width: 58px;
   height: 58px;
   -webkit-animation: spin 2s linear infinite;
   /* Safari */
   animation: spin 2s linear infinite; }
   .loader.dual-loader {
-    border-bottom: 7px solid #4361ee; }
+    border-bottom: 7px solid #597ba9; }
   .loader.multi-loader {
     border-bottom: 7px solid #e2a03f;
     border-right: 7px solid #1abc9c;

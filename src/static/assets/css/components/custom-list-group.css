@@ -113,13 +113,13 @@
   .new-control.new-checkbox[class*="checkbox-outline-"] > input:checked ~ span.new-control-indicator {
     background-color: transparent; }
   .new-control.new-checkbox.new-checkbox-line-through.checkbox-outline-primary > input:checked ~ span.new-chk-content {
-    color: #4361ee; }
+    color: #597ba9; }
   .new-control.new-checkbox.checkbox-outline-primary > input:checked ~ span.new-control-indicator {
-    border: 1px solid #4361ee; }
+    border: 1px solid #597ba9; }
     .new-control.new-checkbox.checkbox-outline-primary > input:checked ~ span.new-control-indicator:after {
-      border-color: #4361ee; }
+      border-color: #597ba9; }
   .new-control.new-checkbox.checkbox-primary > input:checked ~ span.new-control-indicator {
-    background: #4361ee; }
+    background: #597ba9; }
 
 .list-group-item {
   border: 1px solid #e0e6ed;
@@ -159,7 +159,7 @@ code {
 
 .list-group.list-group-icons-meta .list-group-item .media svg {
   width: 20px;
-  color: #4361ee;
+  color: #597ba9;
   height: 20px; }
 
 .list-group.list-group-icons-meta .list-group-item .media .media-body h6 {
@@ -182,7 +182,7 @@ code {
     font-weight: 500; }
 
 .list-group.list-group-media .list-group-item .media img {
-  color: #4361ee;
+  color: #597ba9;
   width: 42px;
   height: 42px; }
 

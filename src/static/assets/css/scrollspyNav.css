@@ -22,12 +22,12 @@
     font-size: 18px;
     color: #fff;
     margin-bottom: 20px;
-    background: #4361ee;
+    background: #597ba9;
     text-align: center;
     border-radius: 5px;
     padding: 4px;
     letter-spacing: 1px;
-    background-image: linear-gradient(to right, #4361ee 0%, #805dca 100%); }
+    background-image: linear-gradient(to right, #597ba9 0%, #805dca 100%); }
   .sidenav .sidenav-content {
     background-color: transparent;
     display: block;
@@ -43,7 +43,7 @@
         font-weight: 700;
         border-left: 1px solid #805dca; }
       .sidenav .sidenav-content a:hover {
-        color: #4361ee;
+        color: #597ba9;
         font-weight: 700;
         border-left: 1px solid #805dca; }
 

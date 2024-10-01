@@ -98,7 +98,7 @@
     padding: 4px 7px;
     height: 24px;
     width: 23px;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 600;    
 }
 .tab-title .nav-pills.group-list .nav-item a {
@@ -147,7 +147,7 @@
 }
 .tab-title li.mail-labels a.dropdown-item:hover {
     background-color: #fff;
-    color: #4361ee;
+    color: #597ba9;
 }
 .tab-title li.mail-labels .label:after {
     position: absolute;
@@ -175,7 +175,7 @@
     margin-bottom: 43px;
 }
 .note-container .switch .active-view {
-    color: #4361ee;
+    color: #597ba9;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .note-container .switch .view-list {
@@ -379,7 +379,7 @@
 .modal-content .modal-footer { border-top: none; }
 .modal-content .modal-footer [data-dismiss="modal"] {
     background-color: #fff;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 700;
     border: 1px solid #e8e8e8;
     padding: 10px 25px;
@@ -390,10 +390,10 @@
     vertical-align: bottom;
 }
 .modal-content .modal-footer #btn-n-add {
-    background-color: #4361ee;
+    background-color: #597ba9;
     color: #fff;
     font-weight: 600;
-    border: 1px solid #4361ee;
+    border: 1px solid #597ba9;
     padding: 10px 25px;
 }
 .modal-content .modal-footer #btn-n-save {

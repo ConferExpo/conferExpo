@@ -340,7 +340,7 @@
     border-bottom: 1px solid #ebedf2;
     width: 100%;
     font-size: 16px;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 500; }
   .invoice-actions .invoice-action-currency .invoice-select {
     margin: 0 25px 0 25px; }
@@ -375,7 +375,7 @@
       border-bottom: 1px solid #ebedf2;
       width: 100%;
       font-size: 16px;
-      color: #4361ee;
+      color: #597ba9;
       font-weight: 500; }
     .invoice-actions .invoice-action-tax .invoice-action-tax-fields {
       margin: 0 25px 0 25px; }
@@ -407,7 +407,7 @@
       border-bottom: 1px solid #ebedf2;
       width: 100%;
       font-size: 16px;
-      color: #4361ee;
+      color: #597ba9;
       font-weight: 500; }
     .invoice-actions .invoice-action-discount .input-rate {
       position: relative;

@@ -22,7 +22,7 @@ nav .navbar-brand {
     font-size: 46px;
     font-weight: 700;
     margin-bottom: 8px;
-    color: #4361ee;
+    color: #597ba9;
 }
 .fq-header-wrapper p {
     font-size: 14px;
@@ -60,7 +60,7 @@ nav .navbar-brand {
 }
 .faq .faq-layouting .fq-comman-question-wrapper ul li:hover {
     cursor: pointer;
-    color: #4361ee;
+    color: #597ba9;
 }
 .faq .faq-layouting .fq-comman-question-wrapper ul li .icon-svg {
     display: inline-block;
@@ -72,7 +72,7 @@ nav .navbar-brand {
     height: 19px;
     vertical-align: bottom;
 }
-.faq .faq-layouting .fq-comman-question-wrapper ul li:hover svg { color: #4361ee; }
+.faq .faq-layouting .fq-comman-question-wrapper ul li:hover svg { color: #597ba9; }
 
 /*
     Tab Section
@@ -100,13 +100,13 @@ nav .navbar-brand {
     padding: 13px 21px;
     font-weight: 600;
     font-size: 16px;
-    color: #4361ee;
+    color: #597ba9;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div .faq-q-title {
     overflow: hidden;
     white-space: nowrap;
     font-size: 13px;
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 600;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div svg.feather-code {
@@ -116,10 +116,10 @@ nav .navbar-brand {
     color: #3b3f5c;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card:hover .card-header div svg.feather-code {
-    color: #4361ee;
+    color: #597ba9;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div[aria-expanded="true"] svg.feather-code {
-    color: #4361ee;
+    color: #597ba9;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div .like-faq {
     display: inline-block;
@@ -135,7 +135,7 @@ nav .navbar-brand {
 }
 .faq .faq-layouting .fq-tab-section .accordion .card:hover .card-header div svg.feather-thumbs-up,
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div[aria-expanded="true"] svg.feather-thumbs-up {
-    color: #4361ee;
+    color: #597ba9;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div span.faq-like-count {
@@ -146,7 +146,7 @@ nav .navbar-brand {
 }
 .faq .faq-layouting .fq-tab-section .accordion .card:hover .card-header div span.faq-like-count,
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div[aria-expanded="true"] span.faq-like-count {
-    color: #4361ee;
+    color: #597ba9;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .collapse {}
@@ -188,7 +188,7 @@ nav .navbar-brand {
 .faq .faq-layouting .fq-article-section .card .card-body p.meta-text {
     font-size: 13px;
     font-weight: 600;
-    color: #4361ee;
+    color: #597ba9;
 }
 .faq .faq-layouting .fq-article-section .card .card-body p.meta-text svg {
     width: 18px;
@@ -207,7 +207,7 @@ nav .navbar-brand {
     box-shadow: 0px -1px 20px 0 rgba(31,45,61,.1);
 }
 #miniFooterWrapper .arrow {
-    background-color: #4361ee;
+    background-color: #597ba9;
     border-radius: 50%;
     position: absolute;
     z-index: 2;
@@ -231,7 +231,7 @@ nav .navbar-brand {
     letter-spacing: 1px;
 }
 #miniFooterWrapper .copyright a {
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 700;
     text-decoration: none;
 }

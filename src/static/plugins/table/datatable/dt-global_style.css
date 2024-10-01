@@ -139,7 +139,7 @@ table.dataTable {
 div.dataTables_wrapper div.dataTables_info {
   padding-top: 0.85em;
   white-space: normal;
-  color: #4361ee;
+  color: #597ba9;
   font-weight: 600;
   border: 1px solid #e0e6ed;
   display: inline-block;
@@ -237,7 +237,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
     width: 17px; }
 
 .page-item.active .page-link {
-  background-color: #4361ee; }
+  background-color: #597ba9; }
 
 #alter_pagination_next a, #alter_pagination_previous a {
   border-radius: 50%;

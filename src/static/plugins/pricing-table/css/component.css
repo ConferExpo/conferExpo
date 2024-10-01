@@ -50,7 +50,7 @@
   border: 2px solid #bfc9d4; }
 
 .switch.s-icons.s-outline-primary {
-  color: #4361ee;
+  color: #597ba9;
   margin: 0 3px 0 11px; }
 
 .switch.s-icons .slider:before {
@@ -162,11 +162,11 @@
   font-weight: 600; }
 
 .billed-yearly-radio span.txt-monthly {
-  color: #4361ee;
+  color: #597ba9;
   font-weight: 700; }
 
 .billed-yearly-radio.billed-yearly-switch span.txt-yearly {
-  color: #4361ee;
+  color: #597ba9;
   font-weight: 700; }
 
 .billed-yearly-radio span.txt-yearly span.badge {
@@ -185,7 +185,7 @@
   margin: 6rem 0 0 0; }
 
 .pricing-plan .recommended-badge {
-  background-color: #4361ee;
+  background-color: #597ba9;
   color: #fff;
   position: absolute;
   width: 100%;
@@ -202,13 +202,13 @@
 .recommended .pricing-plan-label {
   color: #e3e4eb; }
   .recommended .pricing-plan-label strong {
-    color: #4361ee;
+    color: #597ba9;
     font-weight: 700;
     font-size: 44px; }
 
 .pricing-plan.recommended .button {
   color: #fff !important;
-  background-color: #4361ee !important; }
+  background-color: #597ba9 !important; }
 
 @media (max-width: 767px) {
   .pricing-plan:first-of-type {
@@ -258,7 +258,7 @@
       -moz-box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
       box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
       border-radius: 0.25rem;
-      border: 2px solid #4361ee;
+      border: 2px solid #597ba9;
       background: #fff;
       font-weight: 700; }
     #pricingWrapper .stacked:hover .card-price {
@@ -291,8 +291,8 @@
   -webkit-transition: border-color 0.3s, background 0.3s;
   transition: border-color 0.3s, background 0.3s; }
   .pricing--norbu .pricing__item:hover {
-    color: #4361ee;
-    border: 1px solid #4361ee; }
+    color: #597ba9;
+    border: 1px solid #597ba9; }
 
 .pricing--norbu .pricing__title {
   font-size: 26px;
@@ -310,7 +310,7 @@
     bottom: 0; }
 
 .pricing--norbu .pricing__item:hover .pricing__title::after {
-  background: #4361ee; }
+  background: #597ba9; }
 
 .pricing--norbu .icon {
   display: inline-block;
@@ -361,9 +361,9 @@
   transition: background 0.3s; }
 
 .pricing--norbu .pricing__item:hover .pricing__action {
-  color: #4361ee;
+  color: #597ba9;
   background: #eaf1ff;
-  border: solid 1px #4361ee;
+  border: solid 1px #597ba9;
   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
   will-change: opacity, transform;
   transition: all 0.3s ease-out;
@@ -371,8 +371,8 @@
 
 .pricing--norbu .pricing__action:hover, .pricing--norbu .pricing__action:focus {
   color: #eaf1ff;
-  background: #4361ee;
-  border-color: #4361ee;
+  background: #597ba9;
+  border-color: #597ba9;
   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
   will-change: opacity, transform;
   transition: all 0.3s ease-out;
@@ -389,8 +389,8 @@
   -webkit-transition: border-color 0.3s, background 0.3s;
   transition: border-color 0.3s, background 0.3s; }
   .pricing--norbu .pricing__item:hover {
-    color: #4361ee;
-    border: 1px solid #4361ee; }
+    color: #597ba9;
+    border: 1px solid #597ba9; }
 
 .pricing--norbu .pricing__title {
   font-size: 26px;
@@ -408,7 +408,7 @@
     bottom: 0; }
 
 .pricing--norbu .pricing__item:hover .pricing__title::after {
-  background: #4361ee; }
+  background: #597ba9; }
 
 .pricing--norbu .icon {
   display: inline-block;
@@ -459,9 +459,9 @@
   transition: background 0.3s; }
 
 .pricing--norbu .pricing__item:hover .pricing__action {
-  color: #4361ee;
+  color: #597ba9;
   background: #eaf1ff;
-  border: solid 1px #4361ee;
+  border: solid 1px #597ba9;
   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
   will-change: opacity, transform;
   transition: all 0.3s ease-out;
@@ -469,8 +469,8 @@
 
 .pricing--norbu .pricing__action:hover, .pricing--norbu .pricing__action:focus {
   color: #eaf1ff;
-  background: #4361ee;
-  border-color: #4361ee;
+  background: #597ba9;
+  border-color: #597ba9;
   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
   will-change: opacity, transform;
   transition: all 0.3s ease-out;
