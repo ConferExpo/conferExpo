@@ -272,7 +272,7 @@ code {
   word-wrap: normal; }
 
 .navbar .navbar-item .nav-item.dropdown.show a.nav-link span {
-  color: #805dca !important; }
+  color: #304e80 !important; }
   .navbar .navbar-item .nav-item.dropdown.show a.nav-link span.badge {
     background-color: #888ea8 !important; }
 
@@ -281,7 +281,7 @@ code {
   color: #16181b; }
 
 .navbar .navbar-item .nav-item.dropdown .nav-link:hover span {
-  color: #805dca !important; }
+  color: #304e80 !important; }
 
 .navbar .navbar-item .nav-item.dropdown .dropdown-menu {
   /* top: 109%; */
