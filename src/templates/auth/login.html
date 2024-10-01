@@ -1,6 +1,6 @@
 {% extends './base.html' %}
 
-{% block title %}ConferExpo - Iniciar sesión{% endblock %}
+{% block title %}ECA - Iniciar sesión{% endblock %}
 
 {% block customCSS %}
 <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}"> -->
@@ -20,8 +20,10 @@
             <div class="form-form-wrap">
                 <div class="form-container">
                     <div class="form-content">
-                        <h1 class="">Ingresar a <a href="/principalInicio"><span class="brand-name">ConferExpo</span></a></h1>
-                        <p class="signup-link">Eres nuevo? <a href="/register">Crea tu cuenta</a></p>
+                        <h1 class="">Ingresar a <a href="/principalInicio"><span class="brand-name">ECA</span></a></h1>
+                        <h3><small>Expo Control y Automatización</small></h3>
+                        
+                        <p class="signup-link">Eres nuevo? <a href="/register">Registrate</a></p>
                         <!-- Formulario login -->
                         <form class="text-left" action="/login" method="POST">
                             <div class="form">
