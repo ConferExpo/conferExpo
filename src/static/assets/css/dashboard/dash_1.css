@@ -225,7 +225,7 @@
     background: rgb(255 236 203 / 51%);
 }
 .widget-three .widget-content .summary-list:nth-child(1) .w-icon svg {
-    color: #304e80;
+    color: #597ba9;
 }
 .widget-three .widget-content .summary-list:nth-child(2) .w-icon svg {
     color: #009688;
@@ -261,11 +261,11 @@
     box-shadow: 0 2px 2px rgba(224, 230, 237, 0.4588235294117647), 1px 6px 7px rgba(224, 230, 237, 0.4588235294117647);
 }
 .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-secondary {
-    background-color: #597ba9;
+    background-color: #304e80;
     background-image: linear-gradient(to right, #BA68C8 0%, #7579ff 100%);
 }
 .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-success {
-    background-color: #597ba9;
+    background-color: #304e80;
     background-image: linear-gradient(to right, #009688 0%, #25d5e4 100%);
 }
 .widget-three .widget-content .w-summary-stats .progress .progress-bar.bg-gradient-warning {
@@ -413,7 +413,7 @@
     background-color: rgb(220, 207, 247);
 }
 .widget-table-one .transactions-list.t-secondary .t-item .t-icon .icon svg {
-    color: #304e80;
+    color: #597ba9;
 }
 .widget-table-one .transactions-list .t-item .t-icon .icon {
     position: relative;
@@ -558,7 +558,7 @@
     border-radius: 0;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-primary .t-dot:before {
-    background: #597ba9;
+    background: #304e80;
     /* border: 2px solid rgb(27 85 226 / 33%); */
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-success .t-dot:before {
@@ -574,7 +574,7 @@
     /* border: 2px solid rgb(159, 163, 187); */
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-secondary .t-dot:before {
-    background: #304e80;
+    background: #597ba9;
     /* border: 2px solid rgb(92 26 195 / 35%);     */
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-warning .t-dot:before {
@@ -624,13 +624,13 @@
     top: 6px;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-primary .t-text span.badge {
-    color: #597ba9;
-    border: 1px solid #597ba9;
+    color: #304e80;
+    border: 1px solid #304e80;
     background-color: #eaf1ff;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-secondary .t-text span.badge {
-    color: #304e80;
-    border: 1px solid #304e80;
+    color: #597ba9;
+    border: 1px solid #597ba9;
     background-color: #f3effc;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-danger .t-text span.badge {
@@ -723,7 +723,7 @@
     font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    color: #597ba9;
+    color: #304e80;
 }
 .widget-account-invoice-one .invoice-box .acc-amount {
     text-align: center;
@@ -792,7 +792,7 @@
     padding: 24px 30px 63px 30px;
     border-radius: 15px;
     background-color: rgb(22, 15, 107);
-    background-image: linear-gradient(315deg, #160f6b 0%, #597ba9 74%);
+    background-image: linear-gradient(315deg, #160f6b 0%, #304e80 74%);
     min-height: 213px;
     height: 100%;
     
@@ -957,7 +957,7 @@
     letter-spacing: 1px;
 }
 .widget-account-invoice-three .invoice-list .inv-action a.view-details {
-    color: #304e80!important;
+    color: #597ba9!important;
     background: rgb(92 26 195 / 17%);
     border: none!important;
 }
@@ -1263,8 +1263,8 @@
     border-radius: 6px;
 }
 .widget-table-three .table .td-content .tag-primary {
-    color: #597ba9;
-    border: 1px dashed #597ba9;
+    color: #304e80;
+    border: 1px dashed #304e80;
     background: #eaf1ff;
 }
 .widget-table-three .table .td-content .tag-success {

@@ -33,8 +33,8 @@
 /*Default Alerts*/
 .alert-primary {
   color: #fff;
-  background-color: #597ba9;
-  border-color: #597ba9; }
+  background-color: #304e80;
+  border-color: #304e80; }
 
 .alert-warning {
   color: #fff;
@@ -63,7 +63,7 @@
 
 /*Outline Alerts*/
 .alert-outline-primary {
-  border-color: #597ba9;
+  border-color: #304e80;
   border-radius: 5px; }
 
 .alert-outline-warning {
@@ -97,11 +97,11 @@
 
 /*      Light Alert         */
 .alert-light-primary {
-  color: #597ba9;
+  color: #304e80;
   background-color: #eaf1ff;
-  border-color: #597ba9; }
+  border-color: #304e80; }
   .alert-light-primary svg.close {
-    color: #597ba9; }
+    color: #304e80; }
 
 .alert-light-warning {
   color: #e2a03f;

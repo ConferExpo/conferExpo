@@ -222,7 +222,7 @@ try {
       floating: false,
       style: {
         fontSize: '18px',
-        color:  '#597ba9'
+        color:  '#304e80'
       }
     },
     title: {

@@ -98,7 +98,7 @@
     padding: 4px 7px;
     height: 24px;
     width: 23px;
-    color: #597ba9;
+    color: #304e80;
     font-weight: 600;    
 }
 .tab-title .nav-pills.group-list .nav-item a {
@@ -132,7 +132,7 @@
 }
 .tab-title .nav-pills.group-list .nav-item a.g-dot-success:before {
     background: #f3effc;
-    border:1px solid #304e80;
+    border:1px solid #597ba9;
 }
 /*Mail Labels*/
 .tab-title .nav-pills .nav-item .dropdown-menu {
@@ -147,7 +147,7 @@
 }
 .tab-title li.mail-labels a.dropdown-item:hover {
     background-color: #fff;
-    color: #597ba9;
+    color: #304e80;
 }
 .tab-title li.mail-labels .label:after {
     position: absolute;
@@ -175,7 +175,7 @@
     margin-bottom: 43px;
 }
 .note-container .switch .active-view {
-    color: #597ba9;
+    color: #304e80;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .note-container .switch .view-list {
@@ -215,7 +215,7 @@
 .note-container.note-grid .note-item.note-personal .note-inner-content { border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom: 3px solid #4461ed;     background: #eaf1ff; }
 .note-container.note-grid .note-item.note-work .note-inner-content { border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom: 3px solid #e2a03f;     background: #fff9ed; }
 .note-container.note-grid .note-item.note-important .note-inner-content { border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom: 3px solid #e7515a;     background: #fff5f5; }
-.note-container.note-grid  .note-item.note-social .note-inner-content { border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom: 3px solid #304e80;     background: #f3effc; }
+.note-container.note-grid  .note-item.note-social .note-inner-content { border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom: 3px solid #597ba9;     background: #f3effc; }
 .note-container.note-grid .note-item .note-inner-content {
     border-radius: 4px;
     width: 100%;
@@ -301,7 +301,7 @@
 }
 .note-container.note-grid .note-item .note-inner-content .note-footer .tags .g-dot-social {
     background: #f3effc;
-    border: 2px solid #304e80;
+    border: 2px solid #597ba9;
 }
 .note-container.note-grid .note-item .note-inner-content .note-footer .tags .g-dot-important {
     background: #fff5f5;
@@ -345,7 +345,7 @@
 }
 .note-container.note-grid .note-item .note-inner-content .note-footer .tags-selector .dropdown-menu a.g-dot-social:before {
     background: #f3effc;
-    border: 1px solid #304e80;
+    border: 1px solid #597ba9;
 }
 .note-container.note-grid .note-item .note-inner-content .note-footer .nav-link { padding: 0; }
 .note-container.note-grid .note-item .note-inner-content .note-footer .nav-link span { display: block; }
@@ -379,7 +379,7 @@
 .modal-content .modal-footer { border-top: none; }
 .modal-content .modal-footer [data-dismiss="modal"] {
     background-color: #fff;
-    color: #597ba9;
+    color: #304e80;
     font-weight: 700;
     border: 1px solid #e8e8e8;
     padding: 10px 25px;
@@ -390,10 +390,10 @@
     vertical-align: bottom;
 }
 .modal-content .modal-footer #btn-n-add {
-    background-color: #597ba9;
+    background-color: #304e80;
     color: #fff;
     font-weight: 600;
-    border: 1px solid #597ba9;
+    border: 1px solid #304e80;
     padding: 10px 25px;
 }
 .modal-content .modal-footer #btn-n-save {

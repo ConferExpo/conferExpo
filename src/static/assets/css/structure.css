@@ -29,11 +29,11 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #597ba9;
+  color: #304e80;
   background: transparent; }
 
 ::selection {
-  color: #597ba9;
+  color: #304e80;
   background: transparent; }
 
 p {
@@ -159,11 +159,13 @@ code {
     clear: both; }
 
 .widget-content-area {
-  padding: 20px;
+  /* padding: 20px; */
   position: relative;
   background-color: #fff;
   border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px; }
+  border-bottom-right-radius: 6px;
+  align-items: center;
+ }
 
 .content-area {
   max-width: 58.333333%;
@@ -180,7 +182,7 @@ code {
 .navbar {
   padding: 0;
   min-height: 80px;
-  background: #597ba9;
+  background: #304e80;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
   -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
@@ -272,7 +274,7 @@ code {
   word-wrap: normal; }
 
 .navbar .navbar-item .nav-item.dropdown.show a.nav-link span {
-  color: #304e80 !important; }
+  color: #597ba9 !important; }
   .navbar .navbar-item .nav-item.dropdown.show a.nav-link span.badge {
     background-color: #888ea8 !important; }
 
@@ -281,7 +283,7 @@ code {
   color: #16181b; }
 
 .navbar .navbar-item .nav-item.dropdown .nav-link:hover span {
-  color: #304e80 !important; }
+  color: #597ba9 !important; }
 
 .navbar .navbar-item .nav-item.dropdown .dropdown-menu {
   /* top: 109%; */
@@ -466,7 +468,7 @@ code {
 
 .navbar .dropdown:not(.custom-dropdown-icon):not(.custom-dropdown).language-dropdown .custom-dropdown-icon .dropdown-menu a:hover {
   background-color: transparent;
-  color: #597ba9; }
+  color: #304e80; }
 
 .navbar .language-dropdown .custom-dropdown-icon .dropdown-menu img {
   width: 17px;
@@ -631,7 +633,7 @@ code {
         font-size: 14px;
         margin-right: 8px; }
     .navbar .navbar-item .nav-item.dropdown.notification-dropdown .dropdown-menu .dropdown-item:hover .data-info h6 {
-      color: #597ba9; }
+      color: #304e80; }
     .navbar .navbar-item .nav-item.dropdown.notification-dropdown .dropdown-menu .data-info p {
       margin-bottom: 0;
       font-size: 13px;

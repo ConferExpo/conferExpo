@@ -155,7 +155,6 @@ class ModelUser():
 
             # Obtener todos los IDs de eventos por asistir del usuario
             eventos_por_assistir_ids = user.eventos_por_assistir
-
             # Inicializar una lista para almacenar la información de todos los eventos por asistir
             eventos_por_assistir_info = []
 
@@ -165,11 +164,39 @@ class ModelUser():
                 if evento_info:
                     eventos_por_assistir_info.append(evento_info)
 
-            return eventos_por_assistir_info
+            return eventos_por_assistir_info 
 
         except Exception as ex:
             print("Error al obtener eventos por asistir del usuario:", ex)
             return None
+        
+    
+    @classmethod
+    def get_all_eventos_asistidos(cls, db, user_id):
+        try:
+            # Obtener al usuario por su ID
+            user = cls.get_by_id(db, user_id)
+            if not user:
+                raise Exception("El usuario no existe")
+    
+            # Obtener todos los IDs de eventos asistidos del usuario
+            eventos_asistidos_ids = user.eventos_asistidos  # Asumo que tienes un atributo 'eventos_asistidos' en tu modelo de usuario
+            # Inicializar una lista para almacenar la información de todos los eventos asistidos
+            eventos_asistidos_info = []
+    
+            # Obtener la información de cada evento asistido usando el método get_evento_by_id del modelo de eventos
+            for evento_id in eventos_asistidos_ids:
+                evento_info = ModelEvento.get_evento_by_id(db, evento_id)
+                if evento_info:
+                    eventos_asistidos_info.append(evento_info)
+    
+            return eventos_asistidos_info
+    
+        except Exception as ex:
+            print("Error al obtener eventos asistidos del usuario:", ex)
+            return None
+        
+        
         
     @classmethod
     def delete_evento_asistido_by_user(cls, db, user_id, event_id):
@@ -204,3 +231,5 @@ class ModelUser():
             return users, "¡Usuarios encontrados exitosamente!"
         except Exception as ex:
             return None, str(ex)
+        
+        

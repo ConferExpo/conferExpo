@@ -104,7 +104,7 @@ $('.snackbar-bg-primary').click(function() {
     Snackbar.show({
         text: 'Primary',
         actionTextColor: '#fff',
-        backgroundColor: '#597ba9'
+        backgroundColor: '#304e80'
     });
 });
 

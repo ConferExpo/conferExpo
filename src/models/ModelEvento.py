@@ -2,6 +2,7 @@ from .entities.Evento import Evento
 from bson.objectid import ObjectId
 from datetime import datetime
 
+
 class ModelEvento:
 
     
@@ -123,6 +124,35 @@ class ModelEvento:
             return True, "¡Evento actualizado exitosamente!"
         except Exception as ex:
             return False, str(ex)
+
+    @classmethod
+    def register_user_assist_event(cls, db, user_id, event_id):
+        try:
+            # Convertir el event_id en ObjectId de MongoDB
+            event_object_id = ObjectId(event_id)
+
+            # Convertir el user_id en ObjectId si es necesario (si MongoDB lo almacena como ObjectId)
+            # user_object_id = ObjectId(user_id)  # Solo descomentar si es necesario
+
+            # Buscar el evento por su ObjectId
+            evento = db.eventos.find_one({'_id': event_object_id})
+
+            # Si el evento no existe, retornar False
+            if not evento:
+                print("El evento no fue encontrado.")
+                return False
+
+            # Actualizar el arreglo usuarios_asistidos del evento
+            result = db.eventos.update_one(
+                {'_id': event_object_id},
+                {'$addToSet': {'usuarios_asistidos': user_id}}  # Añadir user_id al arreglo
+            )
+
+            # Verificar si la actualización fue exitosa
+            return result.modified_count == 1
+        except Exception as ex:
+            print("Error al registrar usuario al evento:", ex)
+            return False
         
     @classmethod
     def update_cancel_event(cls, db, id):
@@ -193,3 +223,36 @@ class ModelEvento:
         except Exception as ex:
             print(f"Error counting usuarios registrados: {ex}")
             return 0
+
+    @classmethod
+    def get_list_users_by_asist_event(cls, db, event_id):
+        from .ModelUser import ModelUser
+        try:
+            # Obtener el evento por su ID
+            evento = db.eventos.find_one({'_id': ObjectId(event_id)})
+            if not evento:
+                raise Exception("El evento no existe")
+
+            # Obtener la lista de IDs de usuarios que asistieron al evento
+            usuarios_asistidos_ids = evento.get('usuarios_asistidos', [])
+
+            # Inicializar una lista para almacenar la información de los usuarios y del evento
+            usuarios_asistidos_info = []
+            evento_info = {
+                'nombre': evento.get('nombre'),
+                'fecha': evento.get('fecha'),
+                'fecha_hora_inicio': evento.get('fecha_hora_inicio'),
+                'fecha_hora_fin': evento.get('fecha_hora_fin')
+            }
+
+            # Obtener la información de cada usuario que asistió al evento
+            for usuario_id in usuarios_asistidos_ids:
+                usuario_info = ModelUser.get_by_id(db, usuario_id) # Usar ModelUser.get_by_id
+                if usuario_info:
+                    usuarios_asistidos_info.append(usuario_info)
+
+            return usuarios_asistidos_info, evento_info # Devolver también la información del evento
+
+        except Exception as ex:
+            print("Error al obtener la lista de usuarios que asistieron al evento:", ex)
+            return None, None

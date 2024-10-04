@@ -74,7 +74,7 @@
   color: #888ea8; }
 
 .new-control.new-checkbox.new-checkbox-text.checkbox-primary > input:checked ~ span.new-chk-content, .new-control.new-checkbox.new-checkbox-text.checkbox-outline-primary > input:checked ~ span.new-chk-content {
-  color: #597ba9; }
+  color: #304e80; }
 
 .new-control.new-checkbox.new-checkbox-text.checkbox-success > input:checked ~ span.new-chk-content, .new-control.new-checkbox.new-checkbox-text.checkbox-outline-success > input:checked ~ span.new-chk-content {
   color: #1abc9c; }
@@ -89,13 +89,13 @@
   color: #e7515a; }
 
 .new-control.new-checkbox.new-checkbox-text.checkbox-secondary > input:checked ~ span.new-chk-content, .new-control.new-checkbox.new-checkbox-text.checkbox-outline-secondary > input:checked ~ span.new-chk-content {
-  color: #304e80; }
+  color: #597ba9; }
 
 .new-control.new-checkbox.new-checkbox-text.checkbox-dark > input:checked ~ span.new-chk-content, .new-control.new-checkbox.new-checkbox-text.checkbox-outline-dark > input:checked ~ span.new-chk-content {
   color: #3b3f5c; }
 
 .new-control.new-checkbox.checkbox-primary > input:checked ~ span.new-control-indicator {
-  background: #597ba9; }
+  background: #304e80; }
 
 .new-control.new-checkbox.checkbox-success > input:checked ~ span.new-control-indicator {
   background: #1abc9c; }
@@ -110,7 +110,7 @@
   background: #e7515a; }
 
 .new-control.new-checkbox.checkbox-secondary > input:checked ~ span.new-control-indicator {
-  background: #304e80; }
+  background: #597ba9; }
 
 .new-control.new-checkbox.checkbox-dark > input:checked ~ span.new-control-indicator {
   background: #3b3f5c; }
@@ -122,7 +122,7 @@
   border: 2px solid #888ea8; }
 
 .new-control.new-checkbox.checkbox-outline-primary > input:checked ~ span.new-control-indicator {
-  border: 2px solid #597ba9; }
+  border: 2px solid #304e80; }
 
 .new-control.new-checkbox.checkbox-outline-success > input:checked ~ span.new-control-indicator {
   border: 2px solid #1abc9c; }
@@ -137,7 +137,7 @@
   border: 2px solid #e7515a; }
 
 .new-control.new-checkbox.checkbox-outline-secondary > input:checked ~ span.new-control-indicator {
-  border: 2px solid #304e80; }
+  border: 2px solid #597ba9; }
 
 .new-control.new-checkbox.checkbox-outline-dark > input:checked ~ span.new-control-indicator {
   border: 2px solid #3b3f5c; }
@@ -146,7 +146,7 @@
   border-color: #888ea8; }
 
 .new-control.new-checkbox.checkbox-outline-primary > input:checked ~ span.new-control-indicator:after {
-  border-color: #597ba9; }
+  border-color: #304e80; }
 
 .new-control.new-checkbox.checkbox-outline-success > input:checked ~ span.new-control-indicator:after {
   border-color: #1abc9c; }
@@ -161,7 +161,7 @@
   border-color: #e7515a; }
 
 .new-control.new-checkbox.checkbox-outline-secondary > input:checked ~ span.new-control-indicator:after {
-  border-color: #304e80; }
+  border-color: #597ba9; }
 
 .new-control.new-checkbox.checkbox-outline-dark > input:checked ~ span.new-control-indicator:after {
   border-color: #3b3f5c; }
@@ -202,7 +202,7 @@
   .new-control.new-radio.square-radio .new-control-indicator, .new-control.new-radio.square-radio span.new-control-indicator:after {
     border-radius: 0; }
   .new-control.new-radio.radio-primary > input:checked ~ span.new-control-indicator {
-    background: #597ba9; }
+    background: #304e80; }
   .new-control.new-radio.radio-success > input:checked ~ span.new-control-indicator {
     background: #1abc9c; }
   .new-control.new-radio.radio-info > input:checked ~ span.new-control-indicator {
@@ -212,7 +212,7 @@
   .new-control.new-radio.radio-danger > input:checked ~ span.new-control-indicator {
     background: #e7515a; }
   .new-control.new-radio.radio-secondary > input:checked ~ span.new-control-indicator {
-    background: #304e80; }
+    background: #597ba9; }
   .new-control.new-radio.radio-dark > input:checked ~ span.new-control-indicator {
     background: #3b3f5c; }
   .new-control.new-radio[class*="radio-classic-"] > input:checked ~ span.new-control-indicator {
@@ -220,7 +220,7 @@
   .new-control.new-radio.radio-classic-default > input:checked ~ span.new-control-indicator {
     border: 3px solid #888ea8; }
   .new-control.new-radio.radio-classic-primary > input:checked ~ span.new-control-indicator {
-    border: 3px solid #597ba9; }
+    border: 3px solid #304e80; }
   .new-control.new-radio.radio-classic-success > input:checked ~ span.new-control-indicator {
     border: 3px solid #1abc9c; }
   .new-control.new-radio.radio-classic-info > input:checked ~ span.new-control-indicator {
@@ -230,13 +230,13 @@
   .new-control.new-radio.radio-classic-danger > input:checked ~ span.new-control-indicator {
     border: 3px solid #e7515a; }
   .new-control.new-radio.radio-classic-secondary > input:checked ~ span.new-control-indicator {
-    border: 3px solid #304e80; }
+    border: 3px solid #597ba9; }
   .new-control.new-radio.radio-classic-dark > input:checked ~ span.new-control-indicator {
     border: 3px solid #3b3f5c; }
   .new-control.new-radio.radio-classic-default > input:checked ~ span.new-control-indicator:after {
     background-color: #888ea8; }
   .new-control.new-radio.radio-classic-primary > input:checked ~ span.new-control-indicator:after {
-    background-color: #597ba9; }
+    background-color: #304e80; }
   .new-control.new-radio.radio-classic-success > input:checked ~ span.new-control-indicator:after {
     background-color: #1abc9c; }
   .new-control.new-radio.radio-classic-info > input:checked ~ span.new-control-indicator:after {
@@ -246,13 +246,13 @@
   .new-control.new-radio.radio-classic-danger > input:checked ~ span.new-control-indicator:after {
     background-color: #e7515a; }
   .new-control.new-radio.radio-classic-secondary > input:checked ~ span.new-control-indicator:after {
-    background-color: #304e80; }
+    background-color: #597ba9; }
   .new-control.new-radio.radio-classic-dark > input:checked ~ span.new-control-indicator:after {
     background-color: #3b3f5c; }
   .new-control.new-radio.new-radio-text > input:checked ~ span.new-radio-content, .new-control.new-radio.new-radio-text.radio-classic-default > input:checked ~ span.new-radio-content {
     color: #888ea8; }
   .new-control.new-radio.new-radio-text.radio-primary > input:checked ~ span.new-radio-content, .new-control.new-radio.new-radio-text.radio-classic-primary > input:checked ~ span.new-radio-content {
-    color: #597ba9; }
+    color: #304e80; }
   .new-control.new-radio.new-radio-text.radio-success > input:checked ~ span.new-radio-content, .new-control.new-radio.new-radio-text.radio-classic-success > input:checked ~ span.new-radio-content {
     color: #1abc9c; }
   .new-control.new-radio.new-radio-text.radio-info > input:checked ~ span.new-radio-content, .new-control.new-radio.new-radio-text.radio-classic-info > input:checked ~ span.new-radio-content {
@@ -262,7 +262,7 @@
   .new-control.new-radio.new-radio-text.radio-danger > input:checked ~ span.new-radio-content, .new-control.new-radio.new-radio-text.radio-classic-danger > input:checked ~ span.new-radio-content {
     color: #e7515a; }
   .new-control.new-radio.new-radio-text.radio-secondary > input:checked ~ span.new-radio-content, .new-control.new-radio.new-radio-text.radio-classic-secondary > input:checked ~ span.new-radio-content {
-    color: #304e80; }
+    color: #597ba9; }
   .new-control.new-radio.new-radio-text.radio-dark > input:checked ~ span.new-radio-content, .new-control.new-radio.new-radio-text.radio-classic-dark > input:checked ~ span.new-radio-content {
     color: #3b3f5c; }
 

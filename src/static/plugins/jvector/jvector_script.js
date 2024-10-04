@@ -73,7 +73,7 @@ $(function(){
 	$('#world-map').vectorMap({
 
 	   	map: 'world_mill_en',
-		backgroundColor: '#304e80',
+		backgroundColor: '#597ba9',
 		borderColor: '#818181',
 		borderOpacity: 0.25,
 		borderWidth: 1,

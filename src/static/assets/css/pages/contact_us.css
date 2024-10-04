@@ -46,7 +46,7 @@
         .cu-contact-section .contact-form form .input-fields svg {
           position: absolute;
           top: 11px;
-          color: #597ba9;
+          color: #304e80;
           width: 20px;
           left: 25px; }
           .cu-contact-section .contact-form form .input-fields svg.feather-mail {
@@ -75,7 +75,7 @@
 
 /* 	Contact Content 	*/
 .new-control.new-radio.radio-success > input:checked ~ span.new-control-indicator {
-  background: #597ba9 !important; }
+  background: #304e80 !important; }
 
 .cu-contact-section .form-group textarea {
   padding: 8px 5px 8px 43px;
@@ -94,7 +94,7 @@
   padding: 15px 25px;
   display: block;
   width: 100%;
-  background-color: #597ba9 !important;
+  background-color: #304e80 !important;
   box-shadow: none; }
 
 @media (max-width: 991px) {

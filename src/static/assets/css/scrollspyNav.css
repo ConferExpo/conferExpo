@@ -22,12 +22,12 @@
     font-size: 18px;
     color: #fff;
     margin-bottom: 20px;
-    background: #597ba9;
+    background: #304e80;
     text-align: center;
     border-radius: 5px;
     padding: 4px;
     letter-spacing: 1px;
-    background-image: linear-gradient(to right, #597ba9 0%, #304e80 100%); }
+    background-image: linear-gradient(to right, #304e80 0%, #597ba9 100%); }
   .sidenav .sidenav-content {
     background-color: transparent;
     display: block;
@@ -39,17 +39,17 @@
       font-size: 12px;
       padding: 3px 25px; }
       .sidenav .sidenav-content a.active {
-        color: #304e80;
-        font-weight: 700;
-        border-left: 1px solid #304e80; }
-      .sidenav .sidenav-content a:hover {
         color: #597ba9;
         font-weight: 700;
-        border-left: 1px solid #304e80; }
+        border-left: 1px solid #597ba9; }
+      .sidenav .sidenav-content a:hover {
+        color: #304e80;
+        font-weight: 700;
+        border-left: 1px solid #597ba9; }
 
 #content > .container {
   display: flex;
-  max-width: 58.333333% !important;
+  /* max-width: 58.333333% !important; */
   margin-left: 80px;
   margin-left: 2px;
   padding: 0 16px !important; }

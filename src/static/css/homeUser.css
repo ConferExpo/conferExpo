@@ -1,0 +1,174 @@
+/* Estilos generales para la imagen */
+.imagen-responsiva {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Para evitar espacio en blanco debajo de la imagen */
+    margin: 0 auto;
+    /* Para centrar la imagen horizontalmente */
+}
+
+/* Media query para dispositivos móviles (por ejemplo, pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .imagen-responsiva {
+        width: 100%;
+        /* La imagen ocupará el 90% del ancho de la pantalla */
+    }
+}
+
+/* Media query para laptops (por ejemplo, pantallas entre 768px y 1200px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .imagen-responsiva {
+        width: 70%;
+        /* La imagen ocupará el 70% del ancho de la pantalla */
+    }
+}
+
+/* Media query para pantallas grandes (por ejemplo, pantallas mayores a 1200px) */
+@media (min-width: 1200px) {
+    .imagen-responsiva {
+        width: 50%;
+        /* La imagen ocupará el 50% del ancho de la pantalla */
+    }
+}
+
+
+
+*,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+.underlinedH1 {
+    font-size: clamp(1rem, 8vmin, 2rem);
+    font-family: sans-serif;
+    color: hsl(0, 6%, 7%);
+    text-align: center;
+}
+
+.underlined {
+    /*   background: red; */
+    position: relative;
+}
+
+.underline-mask:after {
+    content: '';
+    position: absolute;
+    top: 95%;
+    width: 150%;
+    aspect-ratio: 3 / 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    border: 6px solid hsl(280 80% 50%);
+    /* Use a conic gradient mask to hide and show the bits you want */
+    --spread: 140deg;
+    --start: 290deg;
+    mask: conic-gradient(from var(--start), white 0 var(--spread), transparent var(--spread));
+}
+
+
+.underline-overflow {
+    display: inline-block;
+    /* A little extra padding and overflow hidden   */
+    overflow: hidden;
+    padding-bottom: clamp(1rem, 2vmin, 2rem);
+}
+
+.underline-overflow:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    height: 150%;
+    aspect-ratio: 2.5 / 1;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    border-radius: 50%;
+    border: 6px solid hsl(10 80% 50%);
+}
+
+.underline-clip:after {
+    content: '';
+    position: absolute;
+    top: 95%;
+    width: 150%;
+    aspect-ratio: 3 / 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    border: 6px solid hsl(130 80% 50%);
+    /* Use a clip-path to hide and show the bits you want */
+    clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 0px; 
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    z-index: 10;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg,
+            rgb(255, 255, 255) 75%,
+            rgba(255, 255, 255, 0.9) 80%,
+            rgba(255, 255, 255, 0.25) 95%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.textBanner {
+    font-family: "Yanone Kaffeesatz";
+    font-size: 35px; /* Reduce el tamaño del texto */
+    display: flex;
+    /* position: absolute; */
+    position: relative;
+    top: 0px; 
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+    z-index: 11; 
+    color: black;
+
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-top: 20px;
+        display: inline-block;
+
+        .letter {
+            transition: ease-out 1s;
+            transform: translateY(40%);
+        }
+
+        .shadow {
+            transform: scale(1, -1);
+            color: #999;
+            transition: ease-in 5s, ease-out 5s;
+        }
+
+        &:hover {
+            .letter {
+                transform: translateY(-200%);
+            }
+
+            .shadow {
+                opacity: 0;
+                transform: translateY(200%);
+            }
+        }
+    }
+}
+
+/* Media query para dispositivos móviles (por ejemplo, pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .textBanner .wrapper {
+      display: block; /* Cada palabra se mostrará en una línea separada */
+      text-align: center; /* Centra el texto */
+    }
+  }

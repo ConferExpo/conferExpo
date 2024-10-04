@@ -29,7 +29,7 @@ body.error503 {
   font-size: 33px;
   font-weight: 700;
   margin-bottom: 0;
-  color: #597ba9; }
+  color: #304e80; }
 
 .error503 .img-cartoon {
   width: 170px;
@@ -52,8 +52,8 @@ body.error503 {
   width: 134px;
   padding: 6px;
   font-size: 17px;
-  background-image: linear-gradient(135deg, #597ba9 0%, #304e80 100%);
+  background-image: linear-gradient(135deg, #304e80 0%, #597ba9 100%);
   border: none;
   letter-spacing: 2px; }
   .error503 a.btn:hover, .error503 a.btn:not(:disabled):not(.disabled):active {
-    background-image: linear-gradient(to right, #597ba9 0%, #304e80 100%); }
+    background-image: linear-gradient(to right, #304e80 0%, #597ba9 100%); }

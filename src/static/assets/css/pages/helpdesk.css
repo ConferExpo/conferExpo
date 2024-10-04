@@ -22,7 +22,7 @@
 .hd-header-wrapper h4 {
     font-size: 46px;
     padding: 0 8px;
-    color: #597ba9;
+    color: #304e80;
 }
 .hd-header-wrapper p {
     font-size: 17px;
@@ -44,11 +44,11 @@
 }
 .hd-header-wrapper span.input-group-text svg {
     font-weight: 600;
-    color: #597ba9;
+    color: #304e80;
 }
 .hd-header-wrapper .form-control:focus {
     box-shadow: none;
-    border-color: #597ba9;
+    border-color: #304e80;
     color: #3b3f5c;
     background: #f1f2f3;
 }
@@ -95,7 +95,7 @@
     white-space: nowrap;
     font-size: 13px;
     font-weight: 600;
-    color: #597ba9;
+    color: #304e80;
 }
 .hd-tab-section .accordion .card .card-header div > div svg {
     width: 17px;
@@ -103,8 +103,8 @@
     margin-right: 11px;
     color: #3b3f5c;
 }
-.hd-tab-section .accordion .card .card-header div > div[aria-expanded="true"] svg { color: #597ba9; }
-.hd-tab-section .accordion .card:hover .card-header div > div svg { color: #597ba9; }
+.hd-tab-section .accordion .card .card-header div > div[aria-expanded="true"] svg { color: #304e80; }
+.hd-tab-section .accordion .card:hover .card-header div > div svg { color: #304e80; }
 .hd-tab-section .accordion .card:not(:last-child) .card-header div > div { border-bottom: none; }
 .hd-tab-section .accordion .card .card-body { padding: 20px 30px; }
 .hd-tab-section .accordion .card .card-body p {
@@ -146,11 +146,11 @@
     height: 55px;
     margin-right: 11px;
     align-self: center;
-    color: #597ba9;
+    color: #304e80;
     stroke-width: 1.5px;
 }
 .hd-contact-section .community-help .media h5 {
-    color: #597ba9;
+    color: #304e80;
     font-weight: 800;
      font-size: 17px; 
     margin-bottom: 5px;
@@ -173,11 +173,11 @@
     width: 54px;
     height: 55px;
     margin-right: 11px;
-    color: #597ba9;
+    color: #304e80;
     stroke-width: 1.5px;
 }
 .hd-contact-section .news-updates .media h5 {
-    color: #597ba9;
+    color: #304e80;
     font-weight: 800;
     margin-bottom: 0;
 }
@@ -203,7 +203,7 @@
     background-color: #888ea8;
 }
 .carousel-indicators li.active {
-    background-color: #597ba9;
+    background-color: #304e80;
 }
 .carousel-control-next, .carousel-control-prev {
     opacity: 1;
@@ -220,7 +220,7 @@
     border-radius: 50px;
 }
 .carousel-control-prev-icon svg {
-    color: #597ba9;
+    color: #304e80;
     position: absolute;
     top: 4px;
     left: -1px;
@@ -241,7 +241,7 @@
     border-radius: 50px;
 }
 .carousel-control-next-icon svg {
-    color: #597ba9;
+    color: #304e80;
     position: absolute;
     top: 4px;
     left: 0;
@@ -266,7 +266,7 @@
     box-shadow: 0px -1px 20px 0 rgba(31,45,61,.1);
 }
 #miniFooterWrapper .arrow {
-    background-color: #597ba9;
+    background-color: #304e80;
     border-radius: 50%;
     position: absolute;
     z-index: 2;
@@ -290,7 +290,7 @@
     letter-spacing: 1px;
 }
 #miniFooterWrapper .copyright a {
-    color: #597ba9;
+    color: #304e80;
     font-weight: 700;
     text-decoration: none;
 }

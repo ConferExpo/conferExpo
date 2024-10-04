@@ -52,9 +52,9 @@
     .switch .slider.round:before {
       border-radius: 50%; }
   .switch.s-secondary input:checked + .slider {
-    background-color: #304e80; }
+    background-color: #597ba9; }
   .switch.s-secondary input:focus + .slider {
-    box-shadow: 0 0 1px #304e80; }
+    box-shadow: 0 0 1px #597ba9; }
 
 /* Hide default HTML checkbox */
 /* The slider */
@@ -113,13 +113,13 @@
   .new-control.new-checkbox[class*="checkbox-outline-"] > input:checked ~ span.new-control-indicator {
     background-color: transparent; }
   .new-control.new-checkbox.new-checkbox-line-through.checkbox-outline-primary > input:checked ~ span.new-chk-content {
-    color: #597ba9; }
+    color: #304e80; }
   .new-control.new-checkbox.checkbox-outline-primary > input:checked ~ span.new-control-indicator {
-    border: 1px solid #597ba9; }
+    border: 1px solid #304e80; }
     .new-control.new-checkbox.checkbox-outline-primary > input:checked ~ span.new-control-indicator:after {
-      border-color: #597ba9; }
+      border-color: #304e80; }
   .new-control.new-checkbox.checkbox-primary > input:checked ~ span.new-control-indicator {
-    background: #597ba9; }
+    background: #304e80; }
 
 .list-group-item {
   border: 1px solid #e0e6ed;
@@ -159,7 +159,7 @@ code {
 
 .list-group.list-group-icons-meta .list-group-item .media svg {
   width: 20px;
-  color: #597ba9;
+  color: #304e80;
   height: 20px; }
 
 .list-group.list-group-icons-meta .list-group-item .media .media-body h6 {
@@ -182,7 +182,7 @@ code {
     font-weight: 500; }
 
 .list-group.list-group-media .list-group-item .media img {
-  color: #597ba9;
+  color: #304e80;
   width: 42px;
   height: 42px; }
 

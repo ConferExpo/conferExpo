@@ -4,16 +4,20 @@
 {% block customCSS %}
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/scrollspyNav.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/tabs-accordian/custom-tabs.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/tabs-accordian/custom-tabs.css') }}"
+    type="text/css">
 <link rel="stylesheet" href="{{ url_for('static', filename='plugins/animate/animate.css') }}" type="text/css">
 <script src="{{ url_for('static', filename='plugins/sweetalerts/promise-polyfill.js') }}"></script>
-<link rel="stylesheet" href="{{ url_for('static', filename='plugins/sweetalerts/sweetalert2.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='plugins/sweetalerts/sweetalert2.min.css') }}"
+    type="text/css">
 <link rel="stylesheet" href="{{ url_for('static', filename='plugins/sweetalerts/sweetalert.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/custom-sweetalert.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/custom-sweetalert.css') }}"
+    type="text/css">
 <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/cards/card.css') }}" type="text/css">
 {% endblock %}
 
 {% block body %}
+
 <body>
     <!-- Barra de navegacion -->
     {% include 'navBarUser/navAdmin.html' %}
@@ -35,7 +39,7 @@
             </div>
             <div class="layout-px-spacing">
                 <h1>Todos los eventos</h1>
-                <div class="col-lg-12">                   
+                <div class="col-lg-12">
                     <a href="/homeProximos"><button class="btn btn-secondary">Proximos eventos</button></a>
                     <a href="/homeCancelados"><button class="btn btn-secondary">Cancelados</button></a>
                     <a href="/homeActivos"><button class="btn btn-secondary">Sin cancelar</button></a>
@@ -46,9 +50,12 @@
                         {% for evento in eventos %}
                         <div class="card component-card_9 {% if evento.estatus_evento == 1 %} cancelado {% endif %}">
                             {% if evento.imagen %}
-                            <img class="card-img-top {% if evento.estatus_evento == 1 %} blanco-y-negro {% endif %}" src="{{ url_for('show_image', filename=evento.imagen)}}" alt="Imagen del evento {{ evento.nombre }}">
+                            <img class="card-img-top {% if evento.estatus_evento == 1 %} blanco-y-negro {% endif %}"
+                                src="{{ url_for('show_image', filename=evento.imagen)}}"
+                                alt="Imagen del evento {{ evento.nombre }}">
                             {% else %}
-                            <img src="{{ url_for('static',filename=img/confer_default.jpg)}}" class="card-img-top" alt="Imagen no disponible">
+                            <img src="{{ url_for('static',filename=img/confer_default.jpg)}}" class="card-img-top"
+                                alt="Imagen no disponible">
                             {% endif %}
                             <div class="card-body">
                                 <p class="meta-date">{{ evento.fecha }} | {{ evento.fecha_hora_inicio}} hrs</p>
@@ -61,30 +68,30 @@
                                     <div class="meta-user">
                                         <div class="user-name">
                                             {% if evento.estatus_evento != 1 %}
-                                            <a href="{{ url_for('showEvent', _id=evento._id) }}" class="btn btn-secondary btn-rounded mb-1">Ver detalles</a>
+                                            <a href="{{ url_for('showEvent', _id=evento._id) }}"
+                                                class="btn btn-secondary btn-rounded mb-1">Ver detalles</a>
                                             {% endif %}
                                         </div>
                                         <div class="avatar">
                                             {% if evento.estatus_evento != 1 %}
                                             <a href="{{ url_for('editarEvento', _id=evento._id) }}"><lord-icon
-                                                src="https://cdn.lordicon.com/wuvorxbv.json"
-                                                trigger="hover"
-                                                colors="primary:#121331,secondary:#6f42c1"
-                                                style="width:30px;height:30px">
-                                            </lord-icon></a>
+                                                    src="https://cdn.lordicon.com/wuvorxbv.json" trigger="hover"
+                                                    colors="primary:#121331,secondary:#6f42c1"
+                                                    style="width:30px;height:30px">
+                                                </lord-icon></a>
                                             {% endif %}
                                         </div>
                                     </div>
                                     <div class="meta-action">
                                         <div class="meta-likes">
-                                             {{ evento.aforo }}
+                                            {{ evento.aforo }}
                                         </div>
                                         <div class="meta-view">
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/rfgxevig.json"
-                                                trigger="hover"
-                                                colors="primary:#121331,secondary:#6f42c1"
-                                                style="width:30px;height:30px"></lord-icon> 
+                                            <a href="{{ url_for('assistEventUsersList', _id=evento._id) }}">
+                                                <lord-icon src="https://cdn.lordicon.com/rfgxevig.json" trigger="hover"
+                                                    colors="primary:#121331,secondary:#6f42c1"
+                                                    style="width:30px;height:30px"></lord-icon>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -93,25 +100,23 @@
                         {% endfor %}
                     </div>
                 </div>
-            </div>                   
+            </div>
         </div>
-    </main>    
+    </main>
     {% include '/footer.html' %}
 </body>
 {% endblock %}
 
 
-{% block scripts %}  
-    <script src="{{ url_for('static', filename='plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='plugins/blockui/jquery.blockUI.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/app.js') }}"></script>
+{% block scripts %}
+<script src="{{ url_for('static', filename='plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/blockui/jquery.blockUI.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/app.js') }}"></script>
 
-    <script src="{{ url_for('static', filename='plugins/highlight/highlight.pack.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/highlight/highlight.pack.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
 
-    <script src="{{ url_for('static', filename='assets/js/scrollspyNav.js') }}"></script>
-    <script src="{{ url_for('static', filename='plugins/sweetalerts/sweetalert2.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='plugins/sweetalerts/custom-sweetalert.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/scrollspyNav.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/sweetalerts/sweetalert2.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/sweetalerts/custom-sweetalert.js') }}"></script>
 {% endblock %}
-
-

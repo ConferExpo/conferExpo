@@ -17,7 +17,7 @@
     text-align: center;
 }
 .faq .faq-layouting .fq-tab-section h2 span {
-    color: #597ba9;
+    color: #304e80;
 }
 .faq .faq-layouting .fq-tab-section .accordion {  }
 .faq .faq-layouting .fq-tab-section .accordion .card {
@@ -34,7 +34,7 @@
     padding: 15px 19px;
     font-weight: 600;
     font-size: 16px;
-    color: #597ba9;
+    color: #304e80;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@
     align-self: center;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div[aria-expanded="true"] .faq-q-title {
-    color: #597ba9;
+    color: #304e80;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div .icons {
     display: inline-block;
@@ -61,7 +61,7 @@
     color: #888ea8;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div[aria-expanded="true"] .icons svg {
-    color: #597ba9;
+    color: #304e80;
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div svg.feather-thumbs-up {
     cursor: pointer;
@@ -73,7 +73,7 @@
 }
 .faq .faq-layouting .fq-tab-section .accordion .card:hover .card-header div svg.feather-thumbs-up,
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div[aria-expanded="true"] svg.feather-thumbs-up {
-    color: #597ba9;
+    color: #304e80;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div span.faq-like-count {
@@ -84,7 +84,7 @@
 }
 .faq .faq-layouting .fq-tab-section .accordion .card:hover .card-header div span.faq-like-count,
 .faq .faq-layouting .fq-tab-section .accordion .card .card-header div[aria-expanded="true"] span.faq-like-count {
-    color: #597ba9;
+    color: #304e80;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .faq .faq-layouting .fq-tab-section .accordion .card .collapse {}

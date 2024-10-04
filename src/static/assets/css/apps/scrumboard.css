@@ -17,7 +17,7 @@
     align-self: center;
     font-size: 19px;
     margin-right: 14px;
-    color: #597ba9;
+    color: #304e80;
     font-weight: 600;
 }
 #addListModal .compose-box .list-title input {
@@ -45,7 +45,7 @@
 }
 #addListModal .modal-footer .btn[data-dismiss="modal"] {
     background-color: #fff;
-    color: #597ba9;
+    color: #304e80;
     font-weight: 700;
     border: 1px solid #e0e6ed;
     padding: 10px 25px;
@@ -58,7 +58,7 @@
     padding: 10px 25px;
 }
 #addListModal .modal-footer .btn.add-list {
-    background-color: #597ba9;
+    background-color: #304e80;
     color: #fff;
     font-weight: 600;
     border: 1px solid #e0e6ed;
@@ -94,7 +94,7 @@
     padding: 13px 21px;
     font-weight: 600;
     font-size: 16px;
-    color: #597ba9;
+    color: #304e80;
 }
 #addTaskModal .modal-content {
     border: none;
@@ -104,7 +104,7 @@
     align-self: center;
     font-size: 19px;
     margin-right: 14px;
-    color: #597ba9;
+    color: #304e80;
     font-weight: 600;
 }
 #addTaskModal .modal-content input { padding: 10px 16px; }
@@ -117,16 +117,16 @@
 }
 #addTaskModal .modal-footer .btn[data-dismiss="modal"] {
     background-color: #fff;
-    color: #597ba9;
+    color: #304e80;
     font-weight: 700;
     border: 1px solid #e8e8e8;
     padding: 10px 25px;
 }
 #addTaskModal .modal-footer [data-btnfn="addTask"] {
-    background-color: #597ba9;
+    background-color: #304e80;
     color: #fff;
     font-weight: 600;
-    border: 1px solid #597ba9;
+    border: 1px solid #304e80;
     padding: 10px 25px;
 }
 #addTaskModal .modal-footer [data-btnfn="editTask"] {
@@ -229,7 +229,7 @@
     font-size: 14px;
     font-weight: 700;
 }
-.connect-sorting .task-container-header .dropdown .dropdown-menu .dropdown-item:hover { color: #597ba9; }
+.connect-sorting .task-container-header .dropdown .dropdown-menu .dropdown-item:hover { color: #304e80; }
 .connect-sorting .task-container-header .dropdown .dropdown-menu .dropdown-item.active,
 .connect-sorting .task-container-header .dropdown .dropdown-menu .dropdown-item:active { background-color: transparent; }
 .connect-sorting .task-container-header h6 {
@@ -254,7 +254,7 @@
     display: inline-block;
     cursor: pointer;
 }   
-.connect-sorting .add-s-task .addTask:hover { color: #597ba9; }
+.connect-sorting .add-s-task .addTask:hover { color: #304e80; }
 .connect-sorting .add-s-task .addTask svg {
     width: 16px;
     height: 16px;
@@ -283,7 +283,7 @@
     margin-right: 5px;
 }
 .scrumboard .task-header svg.feather-edit-2:hover {
-    color: #597ba9;
+    color: #304e80;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .scrumboard .task-header svg.feather-trash-2 {
@@ -317,11 +317,11 @@
     height: 17px;
 }
 .scrumboard .card .card-body .task-body .task-bottom div.tb-section-1 span:hover {
-    color: #597ba9;
+    color: #304e80;
     cursor: pointer;
 }
 .scrumboard .card .card-body .task-body .task-bottom div.tb-section-1 span:hover svg {
-    color: #597ba9;
+    color: #304e80;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .scrumboard .card .card-body .task-body .task-bottom div.tb-section-1 svg {
@@ -351,7 +351,7 @@
     padding: 0;
 }
 .scrumboard .card .card-body .task-body .task-bottom div.tb-section-2 svg.feather-edit-2:hover {
-    color: #597ba9;
+    color: #304e80;
     fill: rgba(27, 85, 226, 0.23921568627450981);
 }
 .scrumboard .card .card-body .task-body .task-bottom div.tb-section-2 svg.feather-trash-2 {
@@ -407,7 +407,7 @@
 
 /* On Drag Task */
 
-.scrumboard .card.ui-sortable-helper { background-color: #597ba9 }
+.scrumboard .card.ui-sortable-helper { background-color: #304e80 }
 .scrumboard .card.ui-sortable-helper .task-header span { color: #fff; }
 .scrumboard .card.ui-sortable-helper .task-header span svg { color: #fff; }
 .scrumboard .card.ui-sortable-helper .task-header svg.feather-edit-2 { color: #fff; }
@@ -422,11 +422,11 @@
 .scrumboard .card.ui-sortable-helper .card-body .task-content .progress { box-shadow: none; }
 .ui-state-highlight {
     position: relative;
-    border-color: #597ba9;
+    border-color: #304e80;
     height: 141px;
     margin-bottom: 36px;
     border-radius: 15px;
-    border: 1px dashed #597ba9;
+    border: 1px dashed #304e80;
     background-image: linear-gradient(45deg,rgba(27, 85, 226, 0.09) 25%,transparent 25%,transparent 50%,rgba(27, 85, 226, 0.09) 50%,rgba(27, 85, 226, 0.09) 75%,transparent 75%,transparent);
     background-size: 1rem 1rem;
     -webkit-animation: progress-bar-stripes 1s linear infinite;
@@ -437,7 +437,7 @@
     position: absolute;
     left: 41%;
     font-size: 19px;
-    color: #597ba9;
+    color: #304e80;
     top: 50%;
     margin-top: -16px;
     font-weight: 600;

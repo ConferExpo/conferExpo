@@ -60,11 +60,11 @@ select.bs-select-hidden, select.selectpicker {
   width: 220px; }
 
 .bootstrap-select.show .dropdown-toggle {
-  border: 1px solid #597ba9 !important;
+  border: 1px solid #304e80 !important;
   box-shadow: 0 0 5px 2px rgba(194, 213, 255, 0.619608);
   color: #3b3f5c; }
   .bootstrap-select.show .dropdown-toggle.btn-outline-primary {
-    border: 1px solid #597ba9 !important; }
+    border: 1px solid #304e80 !important; }
   .bootstrap-select.show .dropdown-toggle.btn-outline-info {
     border: 1px solid #2196f3 !important; }
   .bootstrap-select.show .dropdown-toggle.btn-outline-success {
@@ -201,7 +201,7 @@ select.bs-select-hidden, select.selectpicker {
   padding: 9px 19px;
   font-weight: 600; }
   .bootstrap-select.btn-group .dropdown-menu a.dropdown-item span.dropdown-item-inner:not([class*="bg-"]):hover {
-    color: #597ba9;
+    color: #304e80;
     background-color: rgba(27, 85, 226, 0.239216); }
   .bootstrap-select.btn-group .dropdown-menu a.dropdown-item span.dropdown-item-inner.opt {
     position: relative;
@@ -338,7 +338,7 @@ select.bs-select-hidden, select.selectpicker {
   width: 100%; }
 
 .btn-outline-primary:hover {
-  color: #597ba9 !important; }
+  color: #304e80 !important; }
 
 .btn-outline-info:hover {
   color: #2196f3 !important; }
@@ -357,11 +357,11 @@ select.bs-select-hidden, select.selectpicker {
 
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active {
   background-color: transparent;
-  color: #597ba9 !important; }
+  color: #304e80 !important; }
 
 .show > .btn-outline-primary.dropdown-toggle {
   background-color: transparent;
-  color: #597ba9 !important; }
+  color: #304e80 !important; }
 
 .btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active {
   background-color: transparent;
@@ -396,7 +396,7 @@ select.bs-select-hidden, select.selectpicker {
   color: #e2a03f !important; }
 
 .btn.btn-outline-primary .caret {
-  border-top-color: #597ba9; }
+  border-top-color: #304e80; }
 
 .btn.btn-outline-success .caret {
   border-top-color: #1abc9c; }

@@ -18,12 +18,12 @@
   border-left: none !important; }
 
 .table-hover:not(.table-dark) tbody tr:hover .new-control.new-checkbox .new-control-indicator {
-  border: 1px solid #597ba9; }
+  border: 1px solid #304e80; }
 
 /*Style. 1*/
 .style-1 .user-name {
   font-size: 15px;
-  color: #304e80; }
+  color: #597ba9; }
 
 .style-1 .profile-img img {
   border-radius: 6px;
@@ -95,4 +95,4 @@
   /* fill: rgba(231, 81, 90, 0.2196078431372549); */ }
 
 .style-3.table-hover:not(.table-dark) tbody tr:hover td:first-child {
-  color: #597ba9 !important; }
+  color: #304e80 !important; }

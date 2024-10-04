@@ -224,6 +224,25 @@ def assistEvent(evento_id):
     return redirect(url_for('homeUser'))
 
 
+@app.route('/asistidosUser')
+@login_required
+def asistidosUser():
+    if current_user.rol == "usuario":
+        nombre_usuario = current_user.username
+        user_id = current_user.id
+        # Obtener todos los eventos asistidos
+        eventos_asistidos = ModelUser.get_all_eventos_asistidos(db, user_id)
+
+        if eventos_asistidos is None:
+            mensaje = "Error al obtener eventos asistidos."
+            return render_template("userConferExpo/asistidosUser.html", error=mensaje)  # Asumo que tienes una plantilla 'asistidosUser.html'
+
+        return render_template("userConferExpo/asistidosUser.html", eventos=eventos_asistidos, nombre_usuario=nombre_usuario)
+    else:
+        #abort(404)
+        return render_template('error/404.html'), 404
+
+
 @app.route('/assistUserList')
 @login_required
 def assistUserList():
@@ -600,6 +619,7 @@ def process_qr_code():
     if not ModelUser.busca_evento_usuario(db, user_id, event_id):
         # Si el usuario no está registrado, proceder con la actualización en la base de datos
         if ModelUser.update_eventos_asistidos(db, user_id, event_id):
+            ModelEvento.register_user_assist_event(db, user_id, event_id)
             # Preparar la respuesta JSON con los datos del usuario y del evento, así como el mensaje de éxito
             ModelUser.delete_evento_asistido_by_user(db, user_id, event_id)
             response_data = {
@@ -709,6 +729,22 @@ def homeProximos():
     else:
         # Si el usuario no es un administrador, redirigir a una página de error 404
         #abort(404)
+        return render_template('error/404.html'), 404
+    
+@app.route('/assistEventUsersList/<_id>', methods=['GET', 'POST'])
+@login_required
+def assistEventUsersList(_id):
+    if current_user.rol == "administrador":
+        nombre_usuario = current_user.username
+        # Obtener la lista de usuarios que asistieron al evento
+        usuarios_asistidos, evento_info = ModelEvento.get_list_users_by_asist_event(db, _id)
+
+        if usuarios_asistidos is None:
+            mensaje = "Error al obtener la lista de usuarios que asistieron al evento."
+            return render_template("adminUser/eventUsersList.html", error=mensaje)
+
+        return render_template('adminUser/eventUsersList.html', usuarios=usuarios_asistidos, nombre_usuario=nombre_usuario, evento=evento_info)
+    else:
         return render_template('error/404.html'), 404
 
 

@@ -257,7 +257,7 @@ try {
     yaxis: {
       min: 0
     },
-    colors: ['#597ba9'],
+    colors: ['#304e80'],
     tooltip: {
       x: {
         show: false,

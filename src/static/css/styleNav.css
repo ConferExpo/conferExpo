@@ -6,3 +6,17 @@
     color: #fff;
     font-size: 190%;
 }
+
+.navbar-toggler {
+    margin-left: 10px; /* O el valor que desees */
+  }
+
+
+@media (max-width: 768px) { 
+    .navbar-item {
+      font-size: 14px;
+    }
+    .search-ul {
+      margin-top: 10px; 
+    }
+  }

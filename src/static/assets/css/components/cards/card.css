@@ -154,7 +154,7 @@
   margin: 0 auto;
   border: none;
   border-radius: 8px;
-  background: #304e80;
+  background: #597ba9;
   -webkit-box-shadow: 4px 6px 10px -3px #bfc9d4;
   box-shadow: 4px 6px 10px -3px #bfc9d4; }
   .component-card_5 .card-body {
@@ -235,7 +235,7 @@
 	Component Card 7
 */
 .component-card_7 {
-  background-color: #597ba9;
+  background-color: #304e80;
   color: #fff;
   border: none;
   width: 18rem;
@@ -271,7 +271,7 @@
   .component-card_8 .progress-order .progress-order-header span.badge {
     font-size: 12px;
     padding: 6px 10px;
-    color: #597ba9;
+    color: #304e80;
     background-color: #eaf1ff; }
   .component-card_8 .progress-order .progress-order-body ul li img {
     width: 40px;
@@ -284,13 +284,13 @@
       right: -34px; }
       .component-card_8 .progress-order .progress-order-body ul li.badge-notify .notification span.badge {
         background-color: #fff;
-        color: #597ba9;
+        color: #304e80;
         box-shadow: 0 0 20px 0 #d0d0d0;
         font-size: 12px;
         padding: 4px 7px; }
   .component-card_8 .progress-order .progress-order-body .p-o-percentage {
     font-size: 14px;
-    color: #597ba9; }
+    color: #304e80; }
   .component-card_8 .progress-order .progress-order-body .progress {
     height: 6px;
     border-radius: 30px; }
@@ -316,7 +316,7 @@
     margin-bottom: 5px;
     font-size: 12px;
     font-weight: 600;
-    color: #597ba9; }
+    color: #304e80; }
   .component-card_9 .card-title {
     font-size: 15px;
     font-weight: 700;
@@ -369,24 +369,38 @@
   .component-card_9 .meta-likes {
     align-self: center;
     margin-right: 13px;
-    color: #597ba9; }
+    color: #304e80; }
     .component-card_9 .meta-likes svg {
       width: 16px;
       vertical-align: sub;
-      color: #597ba9;
+      color: #304e80;
       fill: rgba(27, 85, 226, 0.239216); }
   .component-card_9 .meta-view {
     align-self: center;
-    color: #597ba9; }
+    color: #304e80; }
     .component-card_9 .meta-view svg {
       width: 16px;
       vertical-align: sub;
-      color: #597ba9;
+      color: #304e80;
       fill: rgba(27, 85, 226, 0.239216); }
 
 /*
 	Media Queries
 */
+/* Media query para dispositivos móviles (por ejemplo, pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .component-card_9 {
+    width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
+  }
+}
+
+/* Media query para pantallas medianas (por ejemplo, pantallas entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .component-card_9 {
+    width: calc(50% - 20px); /* Ocupa el 50% del ancho en pantallas medianas */
+  }
+}
+
 @media (max-width: 575px) {
   /*
   	Component Card 1
