@@ -781,4 +781,4 @@ if __name__ == '__main__':
     csrf.init_app(app)
     #app.register_error_handler(401, status_401)
     #app.register_error_handler(404, status_404)
-    app.run(debug=False, host="0.0.0.0",port=os.getenv("PORT",default=5000))
+    app.run(debug=True, host="0.0.0.0",port=os.getenv("PORT",default=5000))
