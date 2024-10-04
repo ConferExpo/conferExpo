@@ -4,18 +4,23 @@
 {% block customCSS %}
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/scrollspyNav.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/tabs-accordian/custom-tabs.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/tabs-accordian/custom-tabs.css') }}"
+    type="text/css">
 <link rel="stylesheet" href="{{ url_for('static', filename='plugins/animate/animate.css') }}" type="text/css">
 <script src="{{ url_for('static', filename='plugins/sweetalerts/promise-polyfill.js') }}"></script>
-<link rel="stylesheet" href="{{ url_for('static', filename='plugins/sweetalerts/sweetalert2.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='plugins/sweetalerts/sweetalert2.min.css') }}"
+    type="text/css">
 <link rel="stylesheet" href="{{ url_for('static', filename='plugins/sweetalerts/sweetalert.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/custom-sweetalert.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/custom-sweetalert.css') }}"
+    type="text/css">
 <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/cards/card.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/custom-modal.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/components/custom-modal.css') }}"
+    type="text/css">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/homeUser.css') }}">
 {% endblock %}
 
 {% block body %}
+
 <body>
     <!-- Barra de navegacion -->
     {% include 'navBarUser/navUser.html' %}
@@ -45,94 +50,165 @@
                         {% for evento in eventos %}
                         <div class="card component-card_9" data-event-id="{{ evento.id }}">
                             {% if evento.imagen %}
-                            <img class="card-img-top {% if evento.estatus_evento == 1 %} blanco-y-negro {% endif %}" src="{{ url_for('show_image', filename=evento.imagen)}}" alt="Imagen del evento {{ evento.nombre }}">
+                            <img class="card-img-top {% if evento.estatus_evento == 1 %} blanco-y-negro {% endif %}"
+                                src="{{ url_for('show_image', filename=evento.imagen)}}"
+                                alt="Imagen del evento {{ evento.nombre }}">
                             {% else %}
-                            <img src="{{ url_for('static',filename=img/confer_default.jpg)}}" class="card-img-top" alt="Imagen no disponible">
+                            <img src="{{ url_for('static',filename=img/confer_default.jpg)}}" class="card-img-top"
+                                alt="Imagen no disponible">
                             {% endif %}
                             <div class="card-body">
                                 <p class="meta-date">{{ evento.fecha }} | {{ evento.fecha_hora_inicio}} hrs</p>
                                 <h5 class="card-title">{{ evento.nombre }}</h5>
-                                <p class="card-text">{{ evento.resumen }}</p>            
+                                <p class="card-text">{{ evento.resumen }}</p>
                                 <div class="meta-info">
                                     <div class="meta-user">
-                                                {% if evento.estatus_evento != 1 %}
-                                                    <a href="{{ url_for('showEventUser', _id=evento.id) }}" class="btn btn-secondary btn-rounded mb-1">Ver detalles</a>
-                                                {% endif %}
-                                                {% if evento.estatus_evento == 1 %}
-                                                    <!-- <span class="btn btn-secondary btn-rounded mb-1">Cancelado</span> -->
-                                                    <div class="cancelado-overlay text-danger">Cancelado</div>
-                                                {% endif %}
-                                    </div>                                    
+                                        {% if evento.estatus_evento != 1 %}
+                                        <a href="{{ url_for('showEventUser', _id=evento.id) }}"
+                                            class="btn btn-secondary btn-rounded mb-1">Ver detalles</a>
+                                        {% endif %}
+                                        {% if evento.estatus_evento == 1 %}
+                                        <!-- <span class="btn btn-secondary btn-rounded mb-1">Cancelado</span> -->
+                                        <div class="cancelado-overlay text-danger">Cancelado</div>
+                                        {% endif %}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         {% endfor %}
                     </div>
                 </div>
-            </div>     
+            </div>
         </div>
-        
-        <div class="modal fade" id="modalQR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal fade" id="modalQR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Código QR de asistencia</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
                         </button>
                     </div>
                     <div class="modal-body">
                         <div class="text-center">
-                             <!-- Aquí se muestra el código QR -->
-                            <img class="qr-code-img-details img-fluid" id="qr-code-img" src="" alt="Código QR de asistencia">
+                            <!-- Aquí se muestra el código QR -->
+                            <img class="qr-code-img-details img-fluid" id="qr-code-img" src=""
+                                alt="Código QR de asistencia">
                         </div>
                     </div>
                     <div class="modal-footer">
                         <!-- <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Hecho</button> -->
-                        <button class="btn" data-dismiss="modal" id="btnCloseModal"><i class="flaticon-cancel-12"></i> Cerrar QR</button>
+                        <button class="btn" data-dismiss="modal" id="btnCloseModal"><i class="flaticon-cancel-12"></i>
+                            Cerrar QR</button>
                     </div>
                 </div>
             </div>
         </div>
+        <ul class="wrapper" style="margin-top: 20px;">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/isa.ipn" target="_blank">
+                    <span class="tooltip">Facebook</span>
+                    <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="icon twitter">
+                <a href="https://drive.google.com/file/d/1794y4lBgPh749rPWGksNGZQ6P1oGBb2D/view" target="_blank">
+                    <span class="tooltip">Pasaporte</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" height="1.8em" fill="currentColor"
+                        class="twitter">
+                        <g id="icon">
+                            <path
+                                d="M63.91,86.14H10.68A4.67,4.67,0,0,1,6,81.47V10.53a4.66,4.66,0,0,1,4.66-4.66H63.91a4.67,4.67,0,0,1,4.67,4.66V21.07a.75.75,0,1,1-1.5,0V10.53a3.17,3.17,0,0,0-3.17-3.16H10.68a3.17,3.17,0,0,0-3.16,3.16V81.47a3.17,3.17,0,0,0,3.16,3.17H63.91a3.17,3.17,0,0,0,3.17-3.17V60.16a.75.75,0,0,1,1.5,0V81.47A4.68,4.68,0,0,1,63.91,86.14Z" />
+                            <path
+                                d="M67.83,50.81a.74.74,0,0,1-.75-.75V37a.75.75,0,0,1,1.5,0V50.06A.75.75,0,0,1,67.83,50.81Z" />
+                            <path
+                                d="M37.3,42.12a23.24,23.24,0,0,1-7.76-1.18c-3.22-1.18-3.9-2.87-3.9-4.08a11.73,11.73,0,0,1,5.79-10.08.75.75,0,0,1,.75,1.3,10.21,10.21,0,0,0-5,8.78c0,2.14,4.37,3.76,10.16,3.76S47.45,39,47.45,36.86a10.19,10.19,0,0,0-5-8.77.75.75,0,0,1-.27-1,.74.74,0,0,1,1-.27A11.68,11.68,0,0,1,49,36.86C49,40.49,43.1,42.12,37.3,42.12Z" />
+                            <path d="M20.59,53.53H18.26a.75.75,0,0,1,0-1.5h2.33a.75.75,0,1,1,0,1.5Z" />
+                            <path d="M20.59,61.82H18.26a.75.75,0,1,1,0-1.5h2.33a.75.75,0,0,1,0,1.5Z" />
+                            <path d="M20.59,70.11H18.26a.75.75,0,0,1,0-1.5h2.33a.75.75,0,1,1,0,1.5Z" />
+                            <path d="M56.33,53.53H26.9a.75.75,0,0,1,0-1.5H56.33a.75.75,0,0,1,0,1.5Z" />
+                            <path d="M46.21,61.82H26.9a.75.75,0,0,1,0-1.5H46.21a.75.75,0,0,1,0,1.5Z" />
+                            <path d="M53.58,70.11H26.9a.75.75,0,1,1,0-1.5H53.58a.75.75,0,0,1,0,1.5Z" />
+                            <path
+                                d="M67.82,37.76a8.72,8.72,0,1,1,8.73-8.71A8.72,8.72,0,0,1,67.82,37.76Zm0-15.94a7.22,7.22,0,1,0,7.23,7.23A7.22,7.22,0,0,0,67.82,21.82Z" />
+                            <path
+                                d="M66.74,31.84a.73.73,0,0,1-.51-.21l-2-1.86a.75.75,0,1,1,1-1.09L66.73,30l3.62-3.58a.75.75,0,1,1,1.05,1.07l-4.13,4.09A.75.75,0,0,1,66.74,31.84Z" />
+                            <path
+                                d="M58.86,90.13H10.15a7.9,7.9,0,0,1-7.9-7.9V15.4A4.35,4.35,0,0,1,6.6,11.05h.17a.75.75,0,0,1,0,1.5H6.6A2.86,2.86,0,0,0,3.75,15.4V82.23a6.41,6.41,0,0,0,6.4,6.4H58.86a2.86,2.86,0,0,0,2.85-2.85v-.39a.75.75,0,0,1,1.5,0v.39A4.35,4.35,0,0,1,58.86,90.13Z" />
+                            <path
+                                d="M37.3,32.07c-4.27,0-7.7-5.25-7.7-9.6a7.7,7.7,0,0,1,15.4,0C45,26.82,41.56,32.07,37.3,32.07Zm0-15.8a6.21,6.21,0,0,0-6.2,6.2c0,3.57,2.92,8.1,6.2,8.1s6.2-4.53,6.2-8.1A6.21,6.21,0,0,0,37.3,16.27Z" />
+                            <path
+                                d="M53.58,70.11a.71.71,0,0,1-.53-.22.73.73,0,0,1-.18-.78l2.71-7.76a.84.84,0,0,1,.18-.28L86.37,30.46a4.32,4.32,0,1,1,6.11,6.11L61.87,67.18a.84.84,0,0,1-.28.18l-7.77,2.71A.67.67,0,0,1,53.58,70.11ZM56.94,62,54.8,68.14,60.93,66,91.42,35.51a2.82,2.82,0,1,0-4-4Zm4.4,4.64h0Z" />
+                            <path
+                                d="M61.34,67.4a.74.74,0,0,1-.53-.22l-5.05-5.05a.74.74,0,0,1,0-1.06.75.75,0,0,1,1.06,0l5,5.05a.75.75,0,0,1,0,1.06A.74.74,0,0,1,61.34,67.4Z" />
+                            <path
+                                d="M88.73,40a.71.71,0,0,1-.53-.22l-5-5a.74.74,0,0,1,0-1.06.75.75,0,0,1,1.06,0l5.05,5a.75.75,0,0,1,0,1.06A.74.74,0,0,1,88.73,40Z" />
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li class="icon instagram">
+                <a href="https://www.instagram.com/isa.zacatenco?igsh=MW84b3RlZ2hwMHlnMQ%3D%3D" target="_blank">
+                    <span class="tooltip">Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
 
 
-    </main>   
+    </main>
     {% include '/footer.html' %}
 </body>
 {% endblock %}
 
 
-{% block scripts %}  
-    <script>
-        $(document).ready(function() {
-            // Al hacer clic en el botón "QR de asistencia"
-            $('.qr-event').click(function() {
-                // Obtén el ID del evento correspondiente
-                var eventId = $(this).closest('.card').data('event-id');
-                // Obtiene el ID del usuario del contexto de plantilla
-                var userId = '{{ current_user.id }}';
-                // Construye la URL de la ruta para generar el QR
-                var qrUrl = '/generate_qr/' + userId + '/' + eventId;
-                // Actualiza el atributo "src" de la etiqueta <img> con la URL del QR
-                $('#qr-code-img').attr('src', qrUrl);
-            });
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+        // Al hacer clic en el botón "QR de asistencia"
+        $('.qr-event').click(function () {
+            // Obtén el ID del evento correspondiente
+            var eventId = $(this).closest('.card').data('event-id');
+            // Obtiene el ID del usuario del contexto de plantilla
+            var userId = '{{ current_user.id }}';
+            // Construye la URL de la ruta para generar el QR
+            var qrUrl = '/generate_qr/' + userId + '/' + eventId;
+            // Actualiza el atributo "src" de la etiqueta <img> con la URL del QR
+            $('#qr-code-img').attr('src', qrUrl);
         });
+    });
 
-         // Agregar un event listener para el evento "hidden.bs.modal" que se dispara cuando se cierra el modal
-        $('#modalQR').on('hidden.bs.modal', function (e) {
-            // Recargar la página
-            location.reload();
-        });
-    </script>
-    <script src="{{ url_for('static', filename='plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='plugins/blockui/jquery.blockUI.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/app.js') }}"></script>
+    // Agregar un event listener para el evento "hidden.bs.modal" que se dispara cuando se cierra el modal
+    $('#modalQR').on('hidden.bs.modal', function (e) {
+        // Recargar la página
+        location.reload();
+    });
+</script>
+<script src="{{ url_for('static', filename='plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/blockui/jquery.blockUI.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/app.js') }}"></script>
 
-    <script src="{{ url_for('static', filename='plugins/highlight/highlight.pack.js') }}"></script>
-    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/highlight/highlight.pack.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
 
-    <script src="{{ url_for('static', filename='assets/js/scrollspyNav.js') }}"></script>
-    <script src="{{ url_for('static', filename='plugins/sweetalerts/sweetalert2.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='plugins/sweetalerts/custom-sweetalert.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/scrollspyNav.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/sweetalerts/sweetalert2.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/sweetalerts/custom-sweetalert.js') }}"></script>
 {% endblock %}
-

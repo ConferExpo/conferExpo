@@ -18,6 +18,15 @@
     .botons_events .btn {  /* Agrega este estilo */
         margin: 10px;
     }
+
+    .logoNavResponsive {        
+        width: 20%;
+    }
+
+    .tittleNav{
+        color: #fff;
+        font-size: 90%;
+    }
 }
 
 /* Media query para laptops (por ejemplo, pantallas entre 768px y 1200px) */
@@ -25,6 +34,15 @@
     .imagen-responsiva {
         width: 70%;
         /* La imagen ocupará el 70% del ancho de la pantalla */
+    }
+
+    .logoNavResponsive {        
+        width: 12%;
+    }    
+
+    .tittleNav{
+        color: #fff;
+        font-size: 130%;
     }
     
 }
@@ -34,6 +52,15 @@
     .imagen-responsiva {
         width: 50%;
         /* La imagen ocupará el 50% del ancho de la pantalla */
+    }
+
+    .logoNavResponsive {        
+        width: 10%;
+    }
+
+    .tittleNav{
+        color: #fff;
+        font-size: 180%;
     }
 }
 
